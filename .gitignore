@@ -1,3 +1,4 @@
+.idea/
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -17,3 +18,5 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+docker/db/*
+docker/uploads/*

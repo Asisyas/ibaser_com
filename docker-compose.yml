@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:5
+    restart: always
+    ports:
+      - 8080:80
+
+    volumes:
+      - ./src/themes:/var/www/html/wp-content/themes/
+      - ./src/plugins:/var/www/html/wp-content/plugins/
+      - ./docker/uploads:/var/www/html/wp-content/uploads/
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: ibaser
+
+  db:
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - ./fixture/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./docker/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: ibaser
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: '12345'
