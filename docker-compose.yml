@@ -2,8 +2,16 @@ version: '3.1'
 
 services:
 
+  nodejs:
+    image: node:11.10-stretch
+    volumes:
+      - ./src/themes:/app
+    working_dir: /app/ibaser
+    environment:
+      - SHELL=/bin/sh
+
   wordpress:
-    image: wordpress:5
+    image: wordpress:5.1
     restart: always
     ports:
       - 8080:80
