@@ -7,6 +7,11 @@ RUN IT:
   *  open: http://localhost:8080 
 
 
+BUILD THEME ( Rebuild after scss changes )
+ * docker-compose exec nodejs bash
+ * npm install
+ * npm run-script build
+
 WEB
  * http://localhost:8080 front
  * http://localhost:8080/wp-admin admin
