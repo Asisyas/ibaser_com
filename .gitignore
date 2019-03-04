@@ -13,7 +13,9 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
 src/themes/ibaser/node_modules
-src/themes/twentyseventeen/node_modules
+src/themes/twentyseventeen
+src/themes/twentynineteen
+src/themes/twentysixteen
 
 /.htaccess
 /license.txt
