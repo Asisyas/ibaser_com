@@ -30,7 +30,7 @@ services:
     image: mysql:5.7
     restart: always
     volumes:
-      - ./fixture/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./fixture/db/:/docker-entrypoint-initdb.d/
       - ./docker/db:/var/lib/mysql
       - ./docker/scripts/db_backup:/bin/backup
     environment:
