@@ -59,22 +59,48 @@ main,
 
 /* Main */
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   width: 100%;
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
+
+  &__contacts {
+    padding-top: 10px;
+  }
+
+  &__phone a {
+    color: #fff;
+    font-size: 14px;
+
+    &:last-child {
+      margin-top: 10px;
+    }
+  }
 }
 
-.logotype {
-  display: block;
-  background: url('/img/logotype.png') no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 100%;
-  min-height: 100px;
+/*--------------------------------------------------------------------------------------------------*/
+.main-menu > li > a {
+  color: #fff !important;
 }
+
+.main-menu > li.menu-item-has-children .submenu-expand svg {
+  fill: #fff !important;
+}
+
+.main-navigation .sub-menu {
+  @media only screen and (min-width: $media-lg) {
+    background-color: transparent;
+  }
+  background-color: gray;
+}
+
+/*.main-navigation .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
 
 .header-position {
   @media only screen and (min-width: $media-lg) {
@@ -84,6 +110,21 @@ main,
   flex-direction: column;
   width: 100%;
   justify-content: space-around;
+}
+
+.custom-logo-link {
+  img {
+    display: none;
+  }
+}
+
+.custom-logo-link {
+  display: block;
+  background: url('./img/logotype-white.png') no-repeat;
+  background-size: contain;
+  width: 200px !important;
+  height: 100% !important;
+  min-height: 100px;
 }
 
 .site-header {
@@ -102,20 +143,22 @@ main,
   display: none;
 }
 
+/*
 .main-menu-more-toggle {
   @media only screen and (min-width: $media-lg) {
     display: none !important;
   }
-}
+}*/
 
-.sub-menu.hidden-links {
+/*.sub-menu.hidden-links {
   @media only screen and (min-width: $media-lg) {
     position: inherit;
     left: 0;
     display: flex;
     opacity: 1;
   }
-}
+}*/
+/*-------------------------------------------------------------------------------------------------*/
 
 .full-video {
   margin-top: -70px !important;
@@ -128,6 +171,8 @@ main,
   &::before {
     content: "";
     position: absolute;
+    left: 0;
+    top: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: 1;
     width: 100%;

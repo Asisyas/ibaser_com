@@ -6403,7 +6403,7 @@ main,
 
 /* Main */
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   width: 100%;
   max-width: 1440px;
@@ -6411,15 +6411,43 @@ main,
   justify-content: space-between;
 }
 
-.logotype {
-  display: block;
-  background: url("/img/logotype.png") no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 100%;
-  min-height: 100px;
+.header__contacts {
+  padding-top: 10px;
 }
 
+.header__phone a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.header__phone a:last-child {
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+.main-menu > li > a {
+  color: #fff !important;
+}
+
+.main-menu > li.menu-item-has-children .submenu-expand svg {
+  fill: #fff !important;
+}
+
+.main-navigation .sub-menu {
+  background-color: gray;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-navigation .sub-menu {
+    background-color: transparent;
+  }
+}
+
+/*.main-navigation .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
 .header-position {
   display: flex;
   flex-direction: column;
@@ -6431,6 +6459,19 @@ main,
   .header-position {
     flex-direction: row;
   }
+}
+
+.custom-logo-link img {
+  display: none;
+}
+
+.custom-logo-link {
+  display: block;
+  background: url("./img/logotype-white.png") no-repeat;
+  background-size: contain;
+  width: 200px !important;
+  height: 100% !important;
+  min-height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -6449,21 +6490,21 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .main-menu-more-toggle {
+/*
+.main-menu-more-toggle {
+  @media only screen and (min-width: $media-lg) {
     display: none !important;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .sub-menu.hidden-links {
+}*/
+/*.sub-menu.hidden-links {
+  @media only screen and (min-width: $media-lg) {
     position: inherit;
-    right: 0;
+    left: 0;
     display: flex;
     opacity: 1;
   }
-}
-
+}*/
+/*-------------------------------------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
   position: relative;
@@ -6476,6 +6517,8 @@ main,
 .full-video::before {
   content: "";
   position: absolute;
+  right: 0;
+  top: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 1;
   width: 100%;
@@ -6530,7 +6573,7 @@ main,
 
 /* Main */
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 5;
   width: 100%;
   max-width: 1440px;
@@ -6538,15 +6581,43 @@ main,
   justify-content: space-between;
 }
 
-.logotype {
-  display: block;
-  background: url("/img/logotype.png") no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 100%;
-  min-height: 100px;
+.header__contacts {
+  padding-top: 10px;
 }
 
+.header__phone a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.header__phone a:last-child {
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+.main-menu > li > a {
+  color: #fff !important;
+}
+
+.main-menu > li.menu-item-has-children .submenu-expand svg {
+  fill: #fff !important;
+}
+
+.main-navigation .sub-menu {
+  background-color: gray;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-navigation .sub-menu {
+    background-color: transparent;
+  }
+}
+
+/*.main-navigation .main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
 .header-position {
   display: flex;
   flex-direction: column;
@@ -6558,6 +6629,19 @@ main,
   .header-position {
     flex-direction: row;
   }
+}
+
+.custom-logo-link img {
+  display: none;
+}
+
+.custom-logo-link {
+  display: block;
+  background: url("./img/logotype-white.png") no-repeat;
+  background-size: contain;
+  width: 200px !important;
+  height: 100% !important;
+  min-height: 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -6576,21 +6660,21 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .main-menu-more-toggle {
+/*
+.main-menu-more-toggle {
+  @media only screen and (min-width: $media-lg) {
     display: none !important;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .sub-menu.hidden-links {
+}*/
+/*.sub-menu.hidden-links {
+  @media only screen and (min-width: $media-lg) {
     position: inherit;
-    right: 0;
+    left: 0;
     display: flex;
     opacity: 1;
   }
-}
-
+}*/
+/*-------------------------------------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
   position: relative;
@@ -6603,6 +6687,8 @@ main,
 .full-video::before {
   content: "";
   position: absolute;
+  right: 0;
+  top: 0;
   background: rgba(0, 0, 0, 0.3);
   z-index: 1;
   width: 100%;
