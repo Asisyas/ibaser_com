@@ -32,6 +32,7 @@ services:
     volumes:
       - ./fixture/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
       - ./docker/db:/var/lib/mysql
+      - ./docker/scripts/db_backup:/bin/backup
     environment:
       MYSQL_DATABASE: ibaser
       MYSQL_USER: wordpress

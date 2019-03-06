@@ -23,3 +23,9 @@ CREDENTIALS
 RESTORE ALL CHANGES:
 
   * Remove all data from docker/db/*
+
+
+CREATE FIXTURES BACKUP
+
+docker-compose exec db bash
+backup

@@ -1,0 +1,1 @@
+mysqldump -u $MYSQL_USER -p --password=$MYSQL_PASSWORD $MYSQL_DATABASE > /docker-entrypoint-initdb.d/dump.sql
