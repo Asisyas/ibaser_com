@@ -47,6 +47,40 @@
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 		</div><!-- .site-info -->
+
+		<div class="footer-content">
+	    <div class="footer-content--block">
+       	<a class="footer-logotype" href="#"></a>
+				<ul class="social">
+					<li class="social__link--block">
+						<a class="instagram social__link" href="https://www.instagram.com" alt="instagram ссылка" target="_blank"></a>
+					</li>
+					<li class="social__link--block">
+						<a class="fb social__link" href="" alt="facebook ссылка" target="_blank"></a>
+					</li>
+					<li class="social__link--block">
+						<a class="youtube social__link" href="" alt="youtube ссылка" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-contacts">
+        <h4 class="footer__title">Контактная информация</h4>
+        <ul class="footer-contacts--block">
+          <li class="footer-contacts-address">
+            <p>iBaser</p>
+            <p>15154 Some address New Land 232510</p>
+            <p>Canada</p>
+          </li>
+          <li class="footer-contacts-phone">
+            <p>Phone: (123) 456 7890</p>
+            <p>Fax: (123) 456 7890</p>
+          </li>
+          <li class="footer-contacts-mail">
+            <a href="mailto:ibaser@gmail.com">ibaser@gmail.com</a>
+          </li>
+        </ul>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
