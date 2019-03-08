@@ -2988,17 +2988,6 @@ body.page .main-navigation {
   /* Nested sub-menu dashes */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -3011,21 +3000,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
     display: block;
     margin-top: 0;
@@ -3065,13 +3039,6 @@ body.page .main-navigation {
   position: absolute;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -3086,22 +3053,12 @@ body.page .main-navigation {
     display: block;
     width: max-content;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
     display: block;
     width: max-content;
   }
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
@@ -3122,16 +3079,6 @@ body.page .main-navigation {
   /* Non-mobile position */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
@@ -3147,10 +3094,6 @@ body.page .main-navigation {
     float: none;
     max-width: 100%;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
@@ -3161,19 +3104,8 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
@@ -6920,8 +6852,7 @@ main,
 }
 
 .footer-contacts li {
-  /*    border-bottom: solid #dddddd 1px;
-    padding: 10px 0 10px 30px;*/
+  padding: 10px 30px 10px 0;
   max-width: 240px;
 }
 
@@ -6975,9 +6906,43 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a:hover {
+.btn a {
+  position: relative;
+  padding: 0 !important;
   color: #7cc3ff !important;
+}
+
+.btn a:hover {
   background: none !important;
+}
+
+.btn a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.points {
+  margin: 30px auto !important;
+  max-width: 100% !important;
+}
+
+.entry .entry-content p {
+  max-width: 100% !important;
+}
+
+.uagb-timeline__heading {
+  margin: 1rem 0 !important;
+}
+
+.entry-title {
+  color: #7cc3ff !important;
 }
 
 html,
@@ -7477,8 +7442,7 @@ main,
 }
 
 .footer-contacts li {
-  /*    border-bottom: solid #dddddd 1px;
-    padding: 10px 0 10px 30px;*/
+  padding: 10px 30px 10px 0;
   max-width: 240px;
 }
 
@@ -7532,7 +7496,41 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a:hover {
+.btn a {
+  position: relative;
+  padding: 0 !important;
   color: #7cc3ff !important;
+}
+
+.btn a:hover {
   background: none !important;
+}
+
+.btn a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.points {
+  margin: 30px auto !important;
+  max-width: 100% !important;
+}
+
+.entry .entry-content p {
+  max-width: 100% !important;
+}
+
+.uagb-timeline__heading {
+  margin: 1rem 0 !important;
+}
+
+.entry-title {
+  color: #7cc3ff !important;
 }

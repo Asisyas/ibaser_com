@@ -6864,7 +6864,6 @@ main,
 }
 
 .footer-contacts li {
-  /*border-bottom: solid #dddddd 1px;*/
   padding: 10px 0 10px 30px;
   max-width: 240px;
 }
@@ -6919,9 +6918,43 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a:hover {
+.btn a {
+  position: relative;
+  padding: 0 !important;
   color: #7cc3ff !important;
+}
+
+.btn a:hover {
   background: none !important;
+}
+
+.btn a:hover::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.points {
+  margin: 30px auto !important;
+  max-width: 100% !important;
+}
+
+.entry .entry-content p {
+  max-width: 100% !important;
+}
+
+.uagb-timeline__heading {
+  margin: 1rem 0 !important;
+}
+
+.entry-title {
+  color: #7cc3ff !important;
 }
 
 html,
@@ -7421,7 +7454,6 @@ main,
 }
 
 .footer-contacts li {
-  /*border-bottom: solid #dddddd 1px;*/
   padding: 10px 0 10px 30px;
   max-width: 240px;
 }
@@ -7476,7 +7508,41 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a:hover {
+.btn a {
+  position: relative;
+  padding: 0 !important;
   color: #7cc3ff !important;
+}
+
+.btn a:hover {
   background: none !important;
+}
+
+.btn a:hover::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.points {
+  margin: 30px auto !important;
+  max-width: 100% !important;
+}
+
+.entry .entry-content p {
+  max-width: 100% !important;
+}
+
+.uagb-timeline__heading {
+  margin: 1rem 0 !important;
+}
+
+.entry-title {
+  color: #7cc3ff !important;
 }

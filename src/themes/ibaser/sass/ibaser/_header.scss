@@ -484,7 +484,6 @@ main,
   }
 
   li {
-    /*border-bottom: solid #dddddd 1px;*/
     padding: 10px 0 10px 30px;
     max-width: 240px;
   }
@@ -533,8 +532,40 @@ main,
 }
 
 .btn a {
+  position: relative;
+  padding: 0 !important;
+  color: $secondary-color !important;
+
   &:hover {
-    color: $secondary-color !important;
     background: none !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -20px;
+      top: 0;
+      background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      display: block;
+    }
   }
+}
+
+.points {
+  margin: 30px auto !important;
+  max-width: 100% !important;
+}
+
+.entry .entry-content p {
+  max-width: 100% !important;
+}
+
+.uagb-timeline__heading {
+  margin: 1rem 0 !important;
+}
+
+.entry-title {
+  color: $secondary-color !important;
 }
