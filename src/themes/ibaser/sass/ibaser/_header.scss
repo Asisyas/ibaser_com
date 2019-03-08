@@ -1,4 +1,4 @@
-$media-lg: 769px;
+$media-lg: 767px;
 
 $primary-color: #00001E;
 $secondary-color: #7cc3ff;
@@ -99,12 +99,19 @@ main,
     @media only screen and (min-width: $media-lg) {
       background-color: transparent;
     }
-    background-color: $secondary-color;
+
+    &.expanded-true {
+      background-color: $secondary-color;
+    }
 
     & > li > a {
       @media only screen and (min-width: $media-lg) {
         padding: 10px 0 !important;
       }
+    }
+
+    &.expanded-true > li > a {
+      padding: 10px 20px;
     }
   }
 
@@ -135,11 +142,12 @@ main,
 .main-menu-more-toggle,
 .social__link {
   position: relative;
-  width: 35px !important;
+  width: 30px !important;
   height: 35px !important;
   overflow: hidden;
   margin: 0 !important;
   cursor: pointer;
+  display: block;
 
   &::after {
     content: "";
@@ -157,16 +165,16 @@ main,
 
 .social {
   @media only screen and (min-width: $media-lg) {
-    width: 60%;
     margin: 0;
   }
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
+  max-width: 130px;
 
   &__link--block {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     overflow: hidden;
 
     &:hover a::after {
@@ -279,6 +287,12 @@ main,
 .site-branding .site-title,
 .site-branding .site-description {
   display: none;
+}
+
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+  @media only screen and (max-width: $media-lg) {
+    position: fixed;
+  }
 }
 /*------------------------------End of Header -------------------------------------------------------------------*/
 
@@ -395,6 +409,10 @@ main,
     justify-content: column;
   }
 
+  &__title {
+    margin: 0;
+  }
+
   &-logotype {
     background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
     display: block;
@@ -421,6 +439,37 @@ main,
       flex-direction: column;
     }
   }
+
+  &-contacts-address,
+  &-contacts-phone,
+  &-contacts-mail {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+  }
+
+  &-contacts-address::before {
+    background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160211/pin.png) no-repeat !important;
+    background-size: contain;
+  }
+
+  &-contacts-phone::before {
+    background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160205/telephone.png) no-repeat !important;
+    background-size: contain;
+  }
+
+  &-contacts-mail::before {
+    background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160143/email.png) no-repeat !important;
+    background-size: contain;
+  }
 }
 
 .footer-contacts {
@@ -430,21 +479,56 @@ main,
     }
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   li {
-    border-bottom: solid #dddddd 1px;
+    /*border-bottom: solid #dddddd 1px;*/
     padding: 10px 0 10px 30px;
     max-width: 240px;
-   
-    &:first-child {
-      padding-top: 0;
+  }
+}
+
+.site-info {
+  @media only screen and (min-width: $media-lg) {
+    display: flex;
+    justify-content: space-between;
+  }
+  text-align: center;
+
+  a {
+    @media only screen and (min-width: $media-lg) {
+      font-size: 12px;
     }
-    
-    &:last-child {
-      padding-bottom: 0;
-      border-bottom: none;
+    font-size: 0.7rem;
+  }
+}
+
+.footer {
+  &-navigation {
+    &--block {
+      @media only screen and (min-width: $media-lg) {
+        flex-direction: row;
+      }
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
     }
+  }
+
+  &-menu {
+    @media only screen and (min-width: $media-lg) {
+      flex-direction: row;
+    }
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .site-info {
+    max-width: 1140px;
+    margin: calc(2 * 1rem) auto !important;
   }
 }
 
