@@ -84,6 +84,23 @@ main,
       }
     }
   }
+
+  &_primary-theme {
+    position: inherit;
+    .logotype {
+      background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
+      background-size: contain;
+    }
+
+    a,
+    .main-menu > li > a {
+      color: $primary-color !important;
+    }
+
+    .main-menu .submenu-expand svg {
+      fill: $primary-color !important;
+    }
+  }
 }
 
 .main-menu > li > a {
@@ -244,7 +261,7 @@ main,
     left: inherit;
   }
   display: block;
-  background: url('./img/logotype-white.png') no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225726/logotype-white-1.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: 100%;
@@ -568,4 +585,16 @@ main,
 
 .entry-title {
   color: $secondary-color !important;
+}
+
+#trp-floater-ls.trp-floater-ls-names {
+  max-width: 60px;
+}
+
+#trp-floater-ls .trp-with-flags .trp-flag-image {
+  margin-right: 20px;
+}
+
+#trp-floater-ls {
+  left: 90%;
 }

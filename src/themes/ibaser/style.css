@@ -6450,6 +6450,24 @@ main,
   color: #7cc3ff !important;
 }
 
+.header_primary-theme {
+  position: inherit;
+}
+
+.header_primary-theme .logotype {
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
+  background-size: contain;
+}
+
+.header_primary-theme a,
+.header_primary-theme .main-menu > li > a {
+  color: #00001E !important;
+}
+
+.header_primary-theme .main-menu .submenu-expand svg {
+  fill: #00001E !important;
+}
+
 .main-menu > li > a {
   color: #fff !important;
 }
@@ -6605,7 +6623,7 @@ main,
 
 .logotype {
   display: block;
-  background: url("./img/logotype-white.png") no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225726/logotype-white-1.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: 100%;
@@ -6955,6 +6973,18 @@ main,
 
 .entry-title {
   color: #7cc3ff !important;
+}
+
+#trp-floater-ls.trp-floater-ls-names {
+  max-width: 60px;
+}
+
+#trp-floater-ls .trp-with-flags .trp-flag-image {
+  margin-right: 20px;
+}
+
+#trp-floater-ls {
+  left: 90%;
 }
 
 html,
@@ -7040,6 +7070,24 @@ main,
   color: #7cc3ff !important;
 }
 
+.header_primary-theme {
+  position: inherit;
+}
+
+.header_primary-theme .logotype {
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
+  background-size: contain;
+}
+
+.header_primary-theme a,
+.header_primary-theme .main-menu > li > a {
+  color: #00001E !important;
+}
+
+.header_primary-theme .main-menu .submenu-expand svg {
+  fill: #00001E !important;
+}
+
 .main-menu > li > a {
   color: #fff !important;
 }
@@ -7195,7 +7243,7 @@ main,
 
 .logotype {
   display: block;
-  background: url("./img/logotype-white.png") no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225726/logotype-white-1.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: 100%;
@@ -7545,4 +7593,16 @@ main,
 
 .entry-title {
   color: #7cc3ff !important;
+}
+
+#trp-floater-ls.trp-floater-ls-names {
+  max-width: 60px;
+}
+
+#trp-floater-ls .trp-with-flags .trp-flag-image {
+  margin-right: 20px;
+}
+
+#trp-floater-ls {
+  left: 90%;
 }
