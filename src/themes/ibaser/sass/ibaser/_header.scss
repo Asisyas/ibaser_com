@@ -1,7 +1,8 @@
 $media-lg: 767px;
 
 $primary-color: #00001E;
-$secondary-color: #7cc3ff;
+$secondary-color: #1e6497;
+$third-color: #f3a834;
 
 $main-background: #FFF;
 
@@ -58,8 +59,12 @@ main,
   z-index: 5;
   width: 100%;
   max-width: 1440px;
+  min-height: 110px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;/*new*/
+  align-items: center;/*new*/
+  padding: 0;
 
   &__contacts {
     @media only screen and (min-width: $media-lg) {
@@ -87,18 +92,14 @@ main,
 
   &_primary-theme {
     position: inherit;
-    .logotype {
-      background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
-      background-size: contain;
-    }
 
     a,
     .main-menu > li > a {
-      color: $primary-color !important;
+      color: $secondary-color !important;
     }
 
     .main-menu .submenu-expand svg {
-      fill: $primary-color !important;
+      fill: $secondary-color !important;
     }
   }
 }
@@ -119,6 +120,14 @@ main,
 
     &.expanded-true {
       background-color: $secondary-color;
+
+      li a {
+        color: #fff !important;
+      }
+
+      svg {
+        fill: #fff !important;
+      }
     }
 
     & > li > a {
@@ -140,7 +149,9 @@ main,
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .sub-menu li a:hover {
   @media only screen and (min-width: $media-lg) {
-    color: $secondary-color !important;
+    /*color: $secondary-color !important;*/
+    border-bottom: solid $third-color 1px;
+    padding-bottom: 0 !important;
   }
 }
 
@@ -261,10 +272,10 @@ main,
     left: inherit;
   }
   display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225726/logotype-white-1.png) no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/13202016/mountain-v4.png) no-repeat;
   background-size: contain;
   width: 200px;
-  height: 100%;
+  height: auto;
   min-height: 100px;
   position: absolute;
   top: 20px;
@@ -284,12 +295,10 @@ main,
 
 .site-branding-container {
   @media only screen and (min-width: $media-lg) {
+    width: 80%;
     position: inherit;
-    top: inherit;
     right: inherit;
-    width: 75%;
   }
-
   position: absolute;
   top: 20px;
   right: 20px;
@@ -297,8 +306,9 @@ main,
 
 .site-branding {
   @media only screen and (min-width: $media-lg) {
-    margin: 0 10%;
+    text-align: center;
   }
+  margin: 0 auto !important;
 }
 
 .site-branding .site-title,
@@ -341,17 +351,6 @@ main,
   }
 }
 
-.wp-block-quote {
-  position: relative;
-  border: none;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-  }
-}
-
 .quotes--block {
   position: relative;
   border: none !important;
@@ -362,27 +361,29 @@ main,
     font-size: 2em !important;
     font-style: italic !important;
     text-align: center;
+    position: relative;
+    display: inline-block;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
-      width: 65px;
-      height: 60px;
+      width: 45px;
+      height: 40px;
     }
 
     &::before {
       background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/07163647/left-quote.png) no-repeat;
       background-size: cover;
-      top: -45px;
-      left: -15px;
+      top: -30px;
+      left: -55px;
     }
 
     &::after {
       background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/07163640/right-quote.png) no-repeat;
       background-size: cover;
-      bottom: -45px;
-      right: -15px;
+      bottom: -30px;
+      right: -55px;
     }
   }
 }
@@ -428,15 +429,6 @@ main,
 
   &__title {
     margin: 0;
-  }
-
-  &-logotype {
-    background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/06225410/logotype.png) no-repeat;
-    display: block;
-    width: 150px;
-    height: 80px;
-    background-size: contain;
-    margin-bottom: 20px;
   }
 
   &__title {
@@ -548,7 +540,8 @@ main,
   }
 }
 
-.btn a {
+.btn a,
+.uagb-cta__link-content-inner span {
   position: relative;
   padding: 0 !important;
   color: $secondary-color !important;
@@ -585,6 +578,10 @@ main,
 
 .entry-title {
   color: $secondary-color !important;
+
+  &::before {
+    display: none !important;
+  }
 }
 
 #trp-floater-ls.trp-floater-ls-names {
@@ -597,4 +594,52 @@ main,
 
 #trp-floater-ls {
   left: 90%;
+}
+
+/*-----------News---------------------*/
+.news-program {
+
+}
+
+.news {
+  margin-bottom: 20px;
+}
+
+/*.news-past .uagb-cta__title-wrap {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 30;
+    height: 2px;
+    width: 100px;
+    background: $secondary-color;
+    display: block;
+  }
+}*/
+
+.columns--block {
+  max-width: 100% !important;
+  padding: 0 !important;
+
+  & > .uagb-columns__inner-wrap {
+    max-width: 100% !important;
+  }
+}
+
+/*переименовать*/
+.prev-news {
+
+}
+
+
+/*-------------h1, h2, h3, h4------------------*/
+.title {
+  margin: 0;
+  font-size: 25px;
+  border-bottom: gray solid 2px;
+  display: inline-block;
 }
