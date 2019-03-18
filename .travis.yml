@@ -14,7 +14,10 @@ matrix:
   include:
     - php: 7.2
 
-
+addons:
+  apt:
+    packages:
+      - sshpass
 script:
     - npm install --prefix $THEME_ROOT_PATH
     - npm run-script build --prefix $THEME_ROOT_PATH
