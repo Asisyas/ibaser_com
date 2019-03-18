@@ -23,4 +23,4 @@ script:
     - npm run-script build --prefix $THEME_ROOT_PATH
 
 after_success:
-  - sshpass -p $DEPLOY_USER_PWD -e scp -C $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE
+  - sshpass -e scp -C $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE
