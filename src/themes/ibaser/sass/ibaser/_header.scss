@@ -372,6 +372,16 @@ main,
   }
 }
 
+
+.full-video__information-block {
+  position: absolute;
+  top: 100px;
+  align-self: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .quotes--block {
   position: relative;
   border: none !important;
