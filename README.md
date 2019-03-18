@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Asisyas/ibaser_com.svg?branch=master)](https://travis-ci.org/Asisyas/ibaser_com)
+
 REQUIRED:
   * docker
   * docker-composer
