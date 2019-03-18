@@ -1,7 +1,7 @@
 language: php
 sudo: false
 env:
-  - THEME_ROOT_PATH=$HOME/src/themes/ibaser/
+  - THEME_ROOT_PATH=$TRAVIS_BUILD_DIR/src/themes/ibaser/
 cache:
   directories:
     - $HOME/.npm
