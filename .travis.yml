@@ -1,0 +1,19 @@
+language: php
+sudo: false
+env:
+  - THEME_ROOT_PATH=$HOME/src/themes/ibaser/
+cache:
+  directories:
+    - $HOME/.npm
+branches:
+  only:
+    - master
+matrix:
+  fast_finish: true
+  include:
+    - php: 7.2
+
+
+script:
+    - npm install --prefix $THEME_ROOT_PATH
+    - npm run-script build --prefix $THEME_ROOT_PATH
