@@ -19,4 +19,4 @@ script:
 
 after_success:
   - rm -rf $THEME_ROOT_PATH/node_modules
-  - sshpass -e scp -C -r $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE
+  - sshpass -p $DEPLOY_USER_PWD scp -r $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE/ibaser
