@@ -383,7 +383,10 @@ main,
 }
 
 /////
-.full-video__information-block > h3,
+.full-video__information-block > h3 {
+  color: $third-color;
+}
+
 .full-video__information-block .time_circles h4,
 .full-video__information-block .time_circles span {
   color: #fff !important;
