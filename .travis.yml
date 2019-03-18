@@ -18,4 +18,5 @@ script:
     - npm run-script build --prefix $THEME_ROOT_PATH
 
 after_success:
+  - rm -rf $THEME_ROOT_PATH/node_modules
   - sshpass -e scp -C -r $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE
