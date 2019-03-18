@@ -19,4 +19,5 @@ script:
 
 after_success:
   - rm -rf $THEME_ROOT_PATH/node_modules
-  - sshpass -p $DEPLOY_USER_PWD scp -r $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE/ibaser
+  - tar -czvf ibaser.tar.gz $THEME_ROOT_PATH
+  - sshpass -e scp ibaser.tar.gz $DEPLOY_USER@$DEPLOY_HOST:~/
