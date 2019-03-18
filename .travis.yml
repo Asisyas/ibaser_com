@@ -1,7 +1,8 @@
 language: php
 sudo: false
 env:
-  - THEME_ROOT_PATH=$TRAVIS_BUILD_DIR/src/themes/ibaser/
+  - THEME_ROOT_PATH=$TRAVIS_BUILD_DIR/src/themes/ibaser
+  - THEME_PATH_LIVE=/home/mng842476540065/html/wp-content/themes/
 cache:
   directories:
     - $HOME/.npm
@@ -17,3 +18,6 @@ matrix:
 script:
     - npm install --prefix $THEME_ROOT_PATH
     - npm run-script build --prefix $THEME_ROOT_PATH
+
+after_success:
+  - sshpass -p $DEPLOY_USER_PWD -e scp -C $THEME_ROOT_PATH $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE
