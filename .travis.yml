@@ -10,6 +10,7 @@ php:
   - 7.2
 
 addons:
+  ssh_known_hosts: ibaser.com
   apt:
     packages:
       - sshpass
