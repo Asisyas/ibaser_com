@@ -62,7 +62,6 @@ main,
   position: absolute;
   z-index: 5;
   width: 100%;
-  max-width: 1440px;
   min-height: 110px;
   display: flex;
   justify-content: space-between;
@@ -314,13 +313,6 @@ main,
   display: none;
 }
 
-// .site-header {
-//   @media only screen and (min-width: $media-lg) {
-//     margin: 0;
-//     padding: 0;
-//   }
-// }
-
 .site-branding-container {
   @media only screen and (min-width: $media-lg) {
     width: 80%;
@@ -334,7 +326,7 @@ main,
 
 .site-branding {
   @media only screen and (min-width: $media-lg) {
-    text-align: right;
+    text-align: center;
   }
   margin: 0 auto !important;
 }
@@ -596,6 +588,7 @@ main,
 }
 
 .footer {
+  padding-bottom: 25px;
   &-navigation {
     &--block {
       @media only screen and (min-width: $media-lg) {
@@ -711,4 +704,12 @@ main,
 
 .is-active-opacity--block:hover {
   opacity: 1;
+}
+
+.is-active-highlight--block {
+  padding: 10px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
 }

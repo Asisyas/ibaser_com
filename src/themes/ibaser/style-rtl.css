@@ -6411,7 +6411,6 @@ main,
   position: absolute;
   z-index: 5;
   width: 100%;
-  max-width: 1440px;
   min-height: 110px;
   display: flex;
   justify-content: space-between;
@@ -6693,7 +6692,7 @@ main,
 
 @media only screen and (min-width: 767px) {
   .site-branding {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -6912,6 +6911,10 @@ main,
   }
 }
 
+.footer {
+  padding-bottom: 25px;
+}
+
 .footer-navigation--block {
   display: flex !important;
   flex-direction: column;
@@ -7004,21 +7007,6 @@ main,
   margin-bottom: 20px;
 }
 
-/*.news-past .uagb-cta__title-wrap {
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 30;
-    height: 2px;
-    width: 100px;
-    background: $secondary-color;
-    display: block;
-  }
-}*/
 .columns--block {
   max-width: 100% !important;
   padding: 0 !important;
@@ -7047,6 +7035,14 @@ main,
 
 .is-active-opacity--block:hover {
   opacity: 1;
+}
+
+.is-active-highlight--block {
+  padding: 10px;
+}
+
+.is-active-highlight--block:hover {
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .white {
@@ -7105,7 +7101,6 @@ main,
   position: absolute;
   z-index: 5;
   width: 100%;
-  max-width: 1440px;
   min-height: 110px;
   display: flex;
   justify-content: space-between;
@@ -7387,7 +7382,7 @@ main,
 
 @media only screen and (min-width: 767px) {
   .site-branding {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -7606,6 +7601,10 @@ main,
   }
 }
 
+.footer {
+  padding-bottom: 25px;
+}
+
 .footer-navigation--block {
   display: flex !important;
   flex-direction: column;
@@ -7698,21 +7697,6 @@ main,
   margin-bottom: 20px;
 }
 
-/*.news-past .uagb-cta__title-wrap {
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 30;
-    height: 2px;
-    width: 100px;
-    background: $secondary-color;
-    display: block;
-  }
-}*/
 .columns--block {
   max-width: 100% !important;
   padding: 0 !important;
@@ -7741,4 +7725,12 @@ main,
 
 .is-active-opacity--block:hover {
   opacity: 1;
+}
+
+.is-active-highlight--block {
+  padding: 10px;
+}
+
+.is-active-highlight--block:hover {
+  background: rgba(0, 0, 0, 0.03);
 }
