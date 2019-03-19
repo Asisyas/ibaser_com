@@ -1,0 +1,22 @@
+.ycd-timer-time {
+	line-height: 1em;
+	font-size: 6em;
+}
+
+.ycd-timer-container {
+	height: 1em;
+	overflow: hidden;
+	position: relative;
+}
+
+.ycd-timer-box {
+	height: 1em;
+	margin: auto;
+	position: relative;
+}
+
+.ycd-timer-box > span {
+	position: relative;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

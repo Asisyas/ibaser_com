@@ -261,6 +261,10 @@ class TRP_Translation_Render{
      * @return string               Translated HTML page.
      */
     public function translate_page( $output ){
+    	if ( apply_filters( 'trp_stop_translating_page', false, $output ) ){
+    		return $output;
+	    }
+
     	global $trp_editor_notices;
 
         /* replace our special tags so we have valid html */
@@ -723,8 +727,8 @@ class TRP_Translation_Render{
 		    $body = $html->find('body', 0 );
 		    $body->innertext = '<div data-no-translation class="trp-editor-notices">' . $trp_editor_notices . "</div>" . $body->innertext;
 	    }
-
-	    return $html->save();
+	    $final_html = $html->save();
+	    return apply_filters( 'trp_translated_html', $final_html, $TRP_LANGUAGE, $language_code );
     }
 
     /**
@@ -1014,11 +1018,12 @@ class TRP_Translation_Render{
                 }
             }
             $trp_data = array(
-                'trp_ajax_url' => apply_filters('trp_ajax_url', TRP_PLUGIN_URL . 'includes/trp-ajax.php' ),
-                'trp_wp_ajax_url' => apply_filters('trp_wp_ajax_url', admin_url('admin-ajax.php')),
-                'trp_language_to_query' => $language_to_query,
-                'trp_original_language' => $this->settings['default-language'],
-                'trp_current_language' => $TRP_LANGUAGE
+                'trp_ajax_url'          => apply_filters('trp_ajax_url', TRP_PLUGIN_URL . 'includes/trp-ajax.php' ),
+				'trp_wp_ajax_url'       => apply_filters('trp_wp_ajax_url', admin_url('admin-ajax.php')),
+				'trp_language_to_query' => $language_to_query,
+				'trp_original_language' => $this->settings['default-language'],
+				'trp_current_language'  => $TRP_LANGUAGE,
+				'trp_skip_selectors'    => apply_filters( 'trp_skip_selectors_from_dynamic_translation', array( '[data-no-translation]', '[data-no-dynamic-translation]', '[data-trpgettextoriginal]', '[data-trp-translate-id]' ), $TRP_LANGUAGE, $this->settings )
             );
             if ( isset( $_REQUEST['trp-edit-translation'] ) && $_REQUEST['trp-edit-translation'] == 'preview' ) {
                 $trp_data['trp_ajax_url'] = $trp_data['trp_wp_ajax_url'];

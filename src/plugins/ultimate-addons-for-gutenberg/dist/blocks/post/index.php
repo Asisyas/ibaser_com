@@ -103,8 +103,10 @@ function uagb_post_block_add_script() {
 
 	if ( isset( $uagb_post_settings['carousel'] ) && ! empty( $uagb_post_settings['carousel'] ) ) {
 		foreach ( $uagb_post_settings['carousel'] as $key => $value ) {
-			$dots   = ( 'dots' == $value['arrowDots'] || 'arrows_dots' == $value['arrowDots'] ) ? true : false;
-			$arrows = ( 'arrows' == $value['arrowDots'] || 'arrows_dots' == $value['arrowDots'] ) ? true : false;
+			$dots     = ( 'dots' == $value['arrowDots'] || 'arrows_dots' == $value['arrowDots'] ) ? true : false;
+			$arrows   = ( 'arrows' == $value['arrowDots'] || 'arrows_dots' == $value['arrowDots'] ) ? true : false;
+			$tcolumns = ( isset( $value['tcolumns'] ) ) ? $value['tcolumns'] : 2;
+			$mcolumns = ( isset( $value['mcolumns'] ) ) ? $value['mcolumns'] : 1;
 			?>
 			<script type="text/javascript" id="uagb-post-carousel-script-<?php echo $key; ?>">
 				( function( $ ) {
@@ -132,14 +134,14 @@ function uagb_post_block_add_script() {
 							{
 								'breakpoint' : 1024,
 								'settings' : {
-									'slidesToShow' : 2,
+									'slidesToShow' : <?php echo $tcolumns ?>,
 									'slidesToScroll' : 1,
 								}
 							},
 							{
 								'breakpoint' : 767,
 								'settings' : {
-									'slidesToShow' : 1,
+									'slidesToShow' : <?php echo $mcolumns ?>,
 									'slidesToScroll' : 1,
 								}
 							}
@@ -243,8 +245,13 @@ function uagb_register_blocks() {
 				'categories'              => array(
 					'type' => 'string',
 				),
-				'className'               => array(
-					'type' => 'string',
+				'postType'                => array(
+					'type'    => 'string',
+					'default' => 'post',
+				),
+				'taxonomyType'            => array(
+					'type'    => 'string',
+					'default' => 'category',
 				),
 				'postsToShow'             => array(
 					'type'    => 'number',
@@ -608,8 +615,13 @@ function uagb_register_blocks() {
 				'categories'              => array(
 					'type' => 'string',
 				),
-				'className'               => array(
-					'type' => 'string',
+				'postType'                => array(
+					'type'    => 'string',
+					'default' => 'post',
+				),
+				'taxonomyType'            => array(
+					'type'    => 'string',
+					'default' => 'category',
 				),
 				'postsToShow'             => array(
 					'type'    => 'number',
@@ -1006,8 +1018,13 @@ function uagb_register_blocks() {
 				'categories'              => array(
 					'type' => 'string',
 				),
-				'className'               => array(
-					'type' => 'string',
+				'postType'                => array(
+					'type'    => 'string',
+					'default' => 'post',
+				),
+				'taxonomyType'            => array(
+					'type'    => 'string',
+					'default' => 'category',
 				),
 				'postsToShow'             => array(
 					'type'    => 'number',
@@ -1363,52 +1380,76 @@ add_action( 'init', 'uagb_register_blocks' );
  * @since 0.0.1
  */
 function uagb_blocks_register_rest_fields() {
-	// Add featured image source.
-	register_rest_field(
-		'post',
-		'uagb_featured_image_src',
-		array(
-			'get_callback'    => 'uagb_blocks_get_image_src',
-			'update_callback' => null,
-			'schema'          => null,
-		)
-	);
 
-	// Add author info.
-	register_rest_field(
-		'post',
-		'uagb_author_info',
-		array(
-			'get_callback'    => 'uagb_blocks_get_author_info',
-			'update_callback' => null,
-			'schema'          => null,
-		)
-	);
+	$post_type = UAGB_Helper::get_post_types();
 
-	// Add comment info.
-	register_rest_field(
-		'post',
-		'uagb_comment_info',
-		array(
-			'get_callback'    => 'uagb_blocks_get_comment_info',
-			'update_callback' => null,
-			'schema'          => null,
-		)
-	);
+	foreach ( $post_type as $key => $value ) {
 
-	// Add excerpt info.
-	register_rest_field(
-		'post',
-		'uagb_excerpt',
-		array(
-			'get_callback'    => 'uagb_blocks_get_excerpt',
-			'update_callback' => null,
-			'schema'          => null,
-		)
-	);
+		// Add featured image source.
+		register_rest_field(
+			$value['value'],
+			'uagb_featured_image_src',
+			array(
+				'get_callback'    => 'uagb_blocks_get_image_src',
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+
+		// Add author info.
+		register_rest_field(
+			$value['value'],
+			'uagb_author_info',
+			array(
+				'get_callback'    => 'uagb_blocks_get_author_info',
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+
+		// Add comment info.
+		register_rest_field(
+			$value['value'],
+			'uagb_comment_info',
+			array(
+				'get_callback'    => 'uagb_blocks_get_comment_info',
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+
+		// Add excerpt info.
+		register_rest_field(
+			$value['value'],
+			'uagb_excerpt',
+			array(
+				'get_callback'    => 'uagb_blocks_get_excerpt',
+				'update_callback' => null,
+				'schema'          => null,
+			)
+		);
+	}
 }
 
 add_action( 'rest_api_init', 'uagb_blocks_register_rest_fields' );
+
+/**
+ * Create API Order By Fields
+ *
+ * @since 1.12.0
+ */
+function uagb_blocks_register_rest_orderby_fields() {
+
+	$post_type = UAGB_Helper::get_post_types();
+
+	foreach ( $post_type as $key => $type ) {
+
+		add_filter( "rest_{$type['value']}_collection_params", 'uagb_blocks_add_orderby', 10, 1 );
+
+	}
+}
+
+add_action( 'init', 'uagb_blocks_register_rest_orderby_fields' );
 
 
 /**
@@ -1486,6 +1527,20 @@ function uagb_blocks_get_excerpt( $object, $field_name, $request ) {
 		$excerpt = null;
 	}
 	return $excerpt;
+}
+
+/**
+ * Adds Order By values to Rest API
+ *
+ * @param object $params Parameters.
+ * @since 1.12.0
+ */
+function uagb_blocks_add_orderby( $params ) {
+
+	$params['orderby']['enum'][] = 'rand';
+	$params['orderby']['enum'][] = 'menu_order';
+
+	return $params;
 }
 
 /**

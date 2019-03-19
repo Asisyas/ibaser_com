@@ -39,10 +39,10 @@ jQuery( function() {
                 return;
             }
 
-            if (jQuery( "#trp-languages-table .trp-language" ).length >= 2 ){
-            //    jQuery(".trp-upsell-multiple-languages").show('fast');
+           // if (jQuery( "#trp-languages-table .trp-language" ).length >= 2 ){
+           //     jQuery(".trp-upsell-multiple-languages").show('fast');
            //     return;
-            }
+           // }
 
             selected_language.val( '' ).trigger( 'change' );
 

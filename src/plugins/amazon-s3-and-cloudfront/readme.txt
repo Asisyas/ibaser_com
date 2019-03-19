@@ -1,4 +1,4 @@
-=== WP Offload Media Lite for Amazon S3 and DigitalOcean Spaces ===
+=== WP Offload Media Lite for Amazon S3, DigitalOcean Spaces, and Google Cloud Storage ===
 Contributors: bradt, deliciousbrains, ianmjones
 Tags: uploads, amazon, s3, amazon s3, digitalocean, digitalocean spaces, google cloud storage, gcs, mirror, admin, media, cdn, cloudfront
 Requires at least: 4.7
