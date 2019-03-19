@@ -66,16 +66,17 @@ main,
   min-height: 110px;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;/*new*/
-  align-items: center;/*new*/
+  flex-direction: column;
+  align-items: center;
   padding: 0;
+  background: rgba(0, 0, 0, 0.4);
 
   &__contacts {
     @media only screen and (min-width: $media-lg) {
-      width: 20%;
+      width: 200px;
       display: block;
+      text-align: right;
     }
-    padding-top: 10px;
     display: none;
   }
 
@@ -85,35 +86,56 @@ main,
       top: -10px;
     }    
     a {
-      color: #fff;
+      color: #bfbfbf;
       font-size: 14px;
 
       &:hover {
-        color: $secondary-color !important;
+        color: #fff !important;
       }
+    }
+
+    &--block {
+      margin-top: 25px;
     }
   }
 
   &_primary-theme {
     position: inherit;
+    background: none;
+    border-bottom: solid 2px $secondary-color;
 
     a,
     .main-menu > li > a {
-      color: $secondary-color !important;
-    }
+      color: #928d8d !important;
+      &:hover {
+        color: $secondary-color !important;
 
-    .main-menu .submenu-expand svg {
-      fill: $secondary-color !important;
+        .main-menu .submenu-expand svg {
+          fill: $secondary-color !important;
+        }
+      }
     }
+  }
+
+  .social {
+    padding-top: 10px;
   }
 }
 
 .main-menu > li > a {
-  color: #fff !important;
+  color: #bfbfbf !important;
+
+  &:hover {
+    color: #fff !important;
+
+    .submenu-expand svg {
+      fill: #fff !important;
+    }
+  }
 }
 
 .main-menu .submenu-expand svg {
-  fill: #fff !important;
+  fill: #bfbfbf !important;
 }
 
 .main-navigation {
@@ -150,12 +172,10 @@ main,
   }
 }
 
-.main-navigation .main-menu > li > a:hover,
-.main-navigation .sub-menu li a:hover {
+.main-navigation .main-menu > li > a:hover {
   @media only screen and (min-width: $media-lg) {
-    /*color: $secondary-color !important;*/
     border-bottom: solid $third-color 2px;
-    padding-bottom: 0 !important;
+    padding-bottom: 40px !important;
   }
 }
 
@@ -185,54 +205,25 @@ main,
   }
 }
 
-// .social__link {
-//   position: relative;
-//   width: 30px !important;
-//   height: 35px !important;
-//   overflow: hidden;
-//   margin: 0 !important;
-//   cursor: pointer;
-//   display: block;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/07202313/sprites.png) no-repeat !important;
-//     background-size: cover !important;
-//     top: 0;
-//     left: 0;
-//     width: 118px;
-//     height: 30px;
-//     display: block;
-//     background-position: 0px -89px !important;
-//   }
-// }
-
 .social {
   @media only screen and (min-width: $media-lg) {
-    margin: 0;
+    margin: auto;
   }
   display: flex;
   justify-content: space-between;
   margin: 15px 0;
-  max-width: 130px;
+  max-width: 160px;
   margin: 20px auto;
 
   &__link {
     position: relative;
+    opacity: 0.8;
 
     &--block {
       width: 25px;
       height: 25px;
     }
   }
-
-  // &__link--block {
-  //   position: relative;
-    // &:hover a::after {
-    //   background: rgba(0, 0, 0, 0.3);
-    // }
-  // }
 
   .fb::after,
   .instagram::after,
@@ -688,29 +679,9 @@ main,
 }
 
 /*-----------News---------------------*/
-.news-program {
-
-}
-
 .news {
   margin-bottom: 20px;
 }
-
-/*.news-past .uagb-cta__title-wrap {
-  position: relative;
-  display: inline-block;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 30;
-    height: 2px;
-    width: 100px;
-    background: $secondary-color;
-    display: block;
-  }
-}*/
 
 .columns--block {
   max-width: 100% !important;
@@ -720,12 +691,6 @@ main,
     max-width: 100% !important;
   }
 }
-
-/*переименовать*/
-.prev-news {
-
-}
-
 
 /*-------------h1, h2, h3, h4------------------*/
 .title {
@@ -738,4 +703,12 @@ main,
 .entry .entry-content .wp-block-columns.alignfull {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+}
+
+.is-active-scale--block:hover {
+  transform: scale(1.1);
+}
+
+.is-active-opacity--block:hover {
+  opacity: 1;
 }

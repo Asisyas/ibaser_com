@@ -50,25 +50,25 @@
        	<div>
 	       	<a class="footer-logotype" href="/"></a>
 					<ul class="social">
-                        <!--
+                      
 						<li class="social__link--block">
-							<a class="instagram social__link" href="https://www.instagram.com" alt="instagram ссылка" target="_blank"></a>
+							<a class="instagram social__link is-active-opacity--block" href="https://www.instagram.com" alt="instagram ссылка" target="_blank"></a>
 						</li>
 						<li class="social__link--block">
-							<a class="fb social__link" href="" alt="facebook ссылка" target="_blank"></a>
+							<a class="fb social__link is-active-opacity--block" href="" alt="facebook ссылка" target="_blank"></a>
 						</li>
 						<li class="social__link--block">
-							<a class="youtube social__link" href="" alt="youtube ссылка" target="_blank"></a>
+							<a class="youtube social__link is-active-opacity--block" href="" alt="youtube ссылка" target="_blank"></a>
 						</li>
-						-->
-                        <li class="social__link--block">
-                            <a
-                                    class="telegram social__link" href="https://t.me/ibaser"
-                                    alt="iBaser.com - школа прыжков с парашютом"
-                                    target="_blank">
-                            </a>
-                        </li>
-                        https://t.me/ibaser
+						<li class="social__link--block">
+							<a class="vk social__link is-active-opacity--block" href="" alt="vk ссылка" target="_blank"></a>
+						</li>						
+            <li class="social__link--block">
+              <a class="telegram social__link is-active-opacity--block" href="https://t.me/ibaser"
+                 alt="iBaser.com - школа прыжков с парашютом"
+                 target="_blank">
+              </a>
+            </li>
 					</ul>
 				</div>
 				<div class="footer-contacts">
@@ -80,7 +80,7 @@
 	            <p>Минск</p>
 	          </li>
 	          <li class="footer-contacts-phone">
-	            <p>Phone: +375(29) 846 77 34</p>
+	            <a href="tel:+37529-846-77-34">+375(29) 846 77 34</a>
 	          </li>
 	          <li class="footer-contacts-mail">
 	            <p><a href="mailto:ibaser@gmail.com">ceo@vaderlab.com</a></p>
