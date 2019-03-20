@@ -61,7 +61,7 @@
 				</div>
 			</div>
 
-			<?php if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
+			<?php if ( 1 === 2 && is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
 				<div class="site-featured-image">
 					<?php
 						twentynineteen_post_thumbnail();
@@ -81,6 +81,7 @@
 					<?php rewind_posts(); ?>
 				</div>
 			<?php endif; ?>
+
 
 
 		</header><!-- #masthead -->
