@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "62853887-4ddd-40ae-b584-b37fe05fbb7c",
+		"name": "Foxsports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Foxsports - common/post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "{'title': \"Colin Cowherd doesn't think Kyler Murray’s agent should make negative comments about the NFL\", 'description': \"Colin Cowherd does not agree with Kyler Murray’s agent making negative comments regarding the NFL. With the New York Giants passing on the QB, hear why he thinks Murray's agent shouldn't be so assured.\", 'videoId': '1442646595601', 'releaseId': 'DlXV_HMtQuuO', 'postContent': '[theplatform vid=\"1442646595601\" title=\"Colin Cowherd doesn\\'t think Kyler Murray’s agent should make negative comments about the NFL\" releaseURL=\"DlXV_HMtQuuO\" endcardfeed=\"http://feed.theplatform.com/f/BKQ29B/fs-the-herd-all?\" autoplay=\"true\"]', 'category': 'the-herd-with-colin-cowherd', 'defaultThumbnailUrl': 'https://fsvideoprod-a.akamaihd.net/img/Fox_Sports_Production/584/7/Screen_Shot_2019-02-14_at_10.02.14_AM_1280x720_1442669635960.jpg', 'publicationDate': '2019-02-14T12:29:04.000Z', 'postSlug': 'colin-cowherd-doesn-t-think-kyler-murray-s-agent-should-make-negative-comments-about-the-nfl', 'endcardFeed': 'http://feed.theplatform.com/f/BKQ29B/fs-the-herd-all?', 'expirationDate': '', 'updatedDate': '2019-02-14T17:06:40.000Z', 'fscontentType': 'analysis', 'fsorigin': 'national_fox_cable', 'fsnetwork': 'fox_sports_1', 'fsshow': 'the_herd', 'fsprimary': 'nfl', 'fssecondary': '', 'fssponsor': '', 'gameId': '', 'duration': 190.357, 'addToHomePage': False, 'teamIds': 'football-cfb-team-36', 'talent': 'Colin Cowherd'}\r\n"
+			},
+			"response": []
+		}
+	]
+}
