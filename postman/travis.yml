@@ -1,0 +1,22 @@
+language: php
+sudo: false
+cache:
+  directories:
+    - $HOME/.npm
+branches:
+  only:
+    - master
+php:
+  - 7.2
+
+addons:
+  ssh_known_hosts: ibaser.com
+  apt:
+    packages:
+      - sshpass
+script:
+    - npm install --prefix $THEME_ROOT_PATH
+    - npm run-script build --prefix $THEME_ROOT_PATH
+
+after_success:
+  - /bin/bash $TRAVIS_BUILD_DIR/deploy.sh
