@@ -10,7 +10,9 @@ php:
   - 7.2
 
 addons:
-  ssh_known_hosts: p8k.1e3.myftpupload.com
+  ssh_known_hosts:
+    - p8k.1e3.myftpupload.com
+    - 160.153.137.163
   apt:
     packages:
       - sshpass
