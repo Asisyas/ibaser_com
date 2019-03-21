@@ -10,7 +10,7 @@ php:
   - 7.2
 
 addons:
-  ssh_known_hosts: ibaser.com
+  ssh_known_hosts: p8k.1e3.myftpupload.com
   apt:
     packages:
       - sshpass
