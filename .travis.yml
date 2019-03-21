@@ -19,7 +19,4 @@ script:
     - npm run-script build --prefix $THEME_ROOT_PATH
 
 after_success:
-    - rm -rf $THEME_ROOT_PATH/node_modules $THEME_ROOT_PATH/sass
-    - sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST < /bin/bash "rm -rf $THEME_PATH_LIVE/ibaser/*"
-    - sshpass -e scp -r $THEME_ROOT_PATH/* $DEPLOY_USER@$DEPLOY_HOST:$THEME_PATH_LIVE/ibaser
-    - sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST < /bin/bash "wp cache flush --path=$WP_ROOT_LIVE"
+  - /bin/bash $TRAVIS_BUILD_DIR/deploy.sh
