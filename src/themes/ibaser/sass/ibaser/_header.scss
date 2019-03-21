@@ -72,7 +72,7 @@ main,
 
   &__contacts {
     @media only screen and (min-width: $media-lg) {
-      width: 200px;
+      width: 250px;
       display: block;
       text-align: right;
     }
@@ -299,11 +299,11 @@ main,
     left: inherit;
   }
   display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/13202016/mountain-v4.png) no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: auto;
-  min-height: 100px;
+  min-height: 60px;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -341,6 +341,10 @@ main,
     position: fixed;
   }
 }
+
+.main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas)>.sub-menu {
+  text-align: left;
+}
 /*------------------------------End of Header -------------------------------------------------------------------*/
 
 .full-video {
@@ -372,16 +376,12 @@ main,
 }
 
 
-// .full-video__information-block {
-//   position: absolute;
-//   top: 100px;
-//   align-self: center;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-// }
+.full-video__information-block {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-/////
 .full-video__information-block > h3 {
   color: $third-color;
 }
@@ -476,7 +476,7 @@ main,
     background-size: contain;
     width: 150px;
     height: 70px;
-    margin: auto;
+    margin: 0 auto 10px;
   }
 
   p,
@@ -712,4 +712,29 @@ main,
   &:hover {
     background: rgba(0, 0, 0, 0.03);
   }
+}
+
+.gsection_title {
+  display: none;
+}
+
+.entry .entry-content .wp-block-columns.alignfull .wp-block-column {
+  padding: 0;
+}
+
+.entry .entry-content .wp-block-table td {
+  border-color: $secondary-color;
+}
+
+.entry .entry-content .has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {
+  color: $secondary-color;
+}
+
+.entry .entry-content .wp-block-button .wp-block-button__link:hover,
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  border-color: $third-color;
+  background: none;
+  color: $secondary-color;
 }

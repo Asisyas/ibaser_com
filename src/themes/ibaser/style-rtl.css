@@ -2977,17 +2977,6 @@ body.page .main-navigation {
   margin-left: calc( .25 * 1rem);
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -3000,21 +2989,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
     display: block;
     margin-top: 0;
@@ -3032,13 +3006,6 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -3047,12 +3014,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
@@ -3061,22 +3022,8 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .submenu-expand {
   display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
@@ -3090,29 +3037,14 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
@@ -6426,7 +6358,7 @@ main,
 
 @media only screen and (min-width: 767px) {
   .header__contacts {
-    width: 200px;
+    width: 250px;
     display: block;
     text-align: left;
   }
@@ -6650,11 +6582,11 @@ main,
 
 .logotype {
   display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/13202016/mountain-v4.png) no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: auto;
-  min-height: 100px;
+  min-height: 60px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -6707,6 +6639,10 @@ main,
   }
 }
 
+.main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
+  text-align: right;
+}
+
 /*------------------------------End of Header -------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
@@ -6734,6 +6670,12 @@ main,
   width: 40%;
   padding: 4%;
   margin: 0;
+}
+
+.full-video__information-block {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .full-video__information-block > h3 {
@@ -6777,7 +6719,7 @@ main,
   background-size: contain;
   width: 150px;
   height: 70px;
-  margin: auto;
+  margin: 0 auto 10px;
 }
 
 .footer p,
@@ -7043,6 +6985,31 @@ main,
 
 .is-active-highlight--block:hover {
   background: rgba(0, 0, 0, 0.03);
+}
+
+.gsection_title {
+  display: none;
+}
+
+.entry .entry-content .wp-block-columns.alignfull .wp-block-column {
+  padding: 0;
+}
+
+.entry .entry-content .wp-block-table td {
+  border-color: #1e6497;
+}
+
+.entry .entry-content .has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {
+  color: #1e6497;
+}
+
+.entry .entry-content .wp-block-button .wp-block-button__link:hover,
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  border-color: #f3a834;
+  background: none;
+  color: #1e6497;
 }
 
 .white {
@@ -7116,7 +7083,7 @@ main,
 
 @media only screen and (min-width: 767px) {
   .header__contacts {
-    width: 200px;
+    width: 250px;
     display: block;
     text-align: left;
   }
@@ -7340,11 +7307,11 @@ main,
 
 .logotype {
   display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/13202016/mountain-v4.png) no-repeat;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
   background-size: contain;
   width: 200px;
   height: auto;
-  min-height: 100px;
+  min-height: 60px;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -7397,6 +7364,10 @@ main,
   }
 }
 
+.main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
+  text-align: right;
+}
+
 /*------------------------------End of Header -------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
@@ -7424,6 +7395,12 @@ main,
   width: 40%;
   padding: 4%;
   margin: 0;
+}
+
+.full-video__information-block {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .full-video__information-block > h3 {
@@ -7467,7 +7444,7 @@ main,
   background-size: contain;
   width: 150px;
   height: 70px;
-  margin: auto;
+  margin: 0 auto 10px;
 }
 
 .footer p,
@@ -7733,4 +7710,29 @@ main,
 
 .is-active-highlight--block:hover {
   background: rgba(0, 0, 0, 0.03);
+}
+
+.gsection_title {
+  display: none;
+}
+
+.entry .entry-content .wp-block-columns.alignfull .wp-block-column {
+  padding: 0;
+}
+
+.entry .entry-content .wp-block-table td {
+  border-color: #1e6497;
+}
+
+.entry .entry-content .has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
+.entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {
+  color: #1e6497;
+}
+
+.entry .entry-content .wp-block-button .wp-block-button__link:hover,
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  border-color: #f3a834;
+  background: none;
+  color: #1e6497;
 }
