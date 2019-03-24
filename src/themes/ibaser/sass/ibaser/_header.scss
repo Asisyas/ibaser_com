@@ -59,6 +59,9 @@ main,
 
 /*--------------- Header --------------------------*/
 .header {
+  @media only screen and (min-width: $media-lg) {
+    background: rgba(0, 0, 0, 0.4);
+  }
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -68,7 +71,6 @@ main,
   flex-direction: column;
   align-items: center;
   padding: 0;
-  background: rgba(0, 0, 0, 0.4);
 
   &-img {
     margin: 0 !important;
@@ -121,6 +123,14 @@ main,
       }
     }
 
+    .main-navigation .main-menu .menu-item-has-children>.sub-menu {
+      @media only screen and (min-width: $media-lg) {
+        background: rgb(255, 255, 255);
+        border-radius: 5%;
+        padding: 0 10px;
+      }
+    }
+
     .sub-menu li {
       background: none !important;
     }
@@ -158,8 +168,10 @@ main,
     }
 
     li {
-      background: rgba(0, 0, 0, .4);
-      margin-top: -2px;
+      @media only screen and (min-width: $media-lg) {
+        background: rgba(0, 0, 0, .4);
+        margin-top: -2px;
+      }
 
       a {
         color: #bfbfbf;
@@ -200,8 +212,10 @@ main,
 
 .main-navigation .main-menu > li > a:hover {
   @media only screen and (min-width: $media-lg) {
-    border-bottom: solid $third-color 2px;
-    padding-bottom: 40px !important;
+    position: relative;
+    z-index: 5;
+    border-bottom: solid $third-color 3px;
+    padding-bottom: 38px !important;
   }
 }
 
@@ -474,6 +488,10 @@ main,
 //     }
 //   }
 // }
+
+.entry-content {
+  width: 100% !important;
+}
 
 .entry-content p {
   margin: 0 auto !important;
@@ -810,5 +828,14 @@ h2 {
       left: inherit !important;
       width: inherit !important;
     }
+  }
+}
+
+.uagb-team__social-icon svg {
+  fill: $secondary-color !important;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
   }
 }
