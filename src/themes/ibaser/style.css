@@ -6494,7 +6494,7 @@ main,
   fill: #1e6497 !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
     background: white;
     border-radius: 5%;
@@ -6536,7 +6536,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -6590,7 +6590,7 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
     margin-left: 10px !important;
     position: relative;
@@ -6763,8 +6763,10 @@ main,
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children > .sub-menu {
-  text-align: left;
+@media only screen and (min-width: 1025px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: left;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7316,7 +7318,7 @@ main,
   fill: #1e6497 !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
     background: white;
     border-radius: 5%;
@@ -7358,7 +7360,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -7412,7 +7414,7 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
     margin-left: 10px !important;
     position: relative;
@@ -7585,8 +7587,10 @@ main,
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children > .sub-menu {
-  text-align: left;
+@media only screen and (min-width: 1025px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: left;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/

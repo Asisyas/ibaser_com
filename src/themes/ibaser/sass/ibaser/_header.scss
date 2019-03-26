@@ -124,7 +124,7 @@ main,
     }
 
     .main-navigation .main-menu .menu-item-has-children>.sub-menu {
-      @media only screen and (min-width: $media-lg) {
+      @media only screen and (min-width: 1025px) {
         background: rgb(255, 255, 255);
         border-radius: 5%;
         padding: 0 10px;
@@ -168,7 +168,7 @@ main,
     }
 
     li {
-      @media only screen and (min-width: $media-lg) {
+      @media only screen and (min-width: 1025px) {
         background: rgba(0, 0, 0, .4);
         margin-top: -2px;
       }
@@ -224,7 +224,7 @@ main,
 }
 
 .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
-    @media only screen and (min-width: $media-lg) {
+    @media only screen and (min-width: 1025px) {
     margin-left: 10px !important;
     position: relative;
   }
@@ -384,7 +384,9 @@ main,
 }
 
 .main-navigation .main-menu .menu-item-has-children>.sub-menu {
-  text-align: left;
+  @media only screen and (min-width: 1025px) {
+    text-align: left;
+  }
 }
 /*------------------------------End of Header -------------------------------------------------------------------*/
 

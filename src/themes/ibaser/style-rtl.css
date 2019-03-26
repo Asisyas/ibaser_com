@@ -6482,7 +6482,7 @@ main,
   fill: #1e6497 !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
     background: white;
     border-radius: 5%;
@@ -6524,7 +6524,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -6578,7 +6578,7 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
     margin-right: 10px !important;
     position: relative;
@@ -6751,8 +6751,10 @@ main,
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children > .sub-menu {
-  text-align: right;
+@media only screen and (max-width: 1025px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: right;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7169,7 +7171,7 @@ h2:before {
 }
 
 .uagb-team__social-icon svg {
-  fill: #1e6497;
+  fill: #1e6497 !important;
   opacity: 0.8;
 }
 
@@ -7304,7 +7306,7 @@ main,
   fill: #1e6497 !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
     background: white;
     border-radius: 5%;
@@ -7346,7 +7348,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -7400,7 +7402,7 @@ main,
   display: none;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
   .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
     margin-right: 10px !important;
     position: relative;
@@ -7573,8 +7575,10 @@ main,
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children > .sub-menu {
-  text-align: right;
+@media only screen and (max-width: 1025px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: right;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7991,7 +7995,7 @@ h2:before {
 }
 
 .uagb-team__social-icon svg {
-  fill: #1e6497;
+  fill: #1e6497 !important;
   opacity: 0.8;
 }
 
