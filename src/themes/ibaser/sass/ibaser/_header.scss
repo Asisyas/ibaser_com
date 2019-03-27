@@ -123,13 +123,13 @@ main,
       }
     }
 
-    // .main-navigation .main-menu .menu-item-has-children>.sub-menu {
-    //   @media only screen and (min-width: $media-lg) {
-    //     background: rgb(255, 255, 255);
-    //     border-radius: 5%;
-    //     padding: 0 10px;
-    //   }
-    // }
+    .main-navigation .main-menu .menu-item-has-children>.sub-menu {
+      @media only screen and (min-width: 1140px) {
+        background: rgb(255, 255, 255);
+        border-radius: 5%;
+        padding: 0 10px;
+      }
+    }
 
     .sub-menu li {
       background: none !important;
@@ -168,7 +168,7 @@ main,
     }
 
     li {
-      @media only screen and (min-width: $media-lg) {
+      @media only screen and (min-width: 1140px) {
         background: rgba(0, 0, 0, .4);
         margin-top: -2px;
       }
@@ -316,15 +316,19 @@ main,
   @media only screen and (min-width: $media-lg) {
     flex-direction: row;
   }
+  @media only screen and (min-width: 1140px) {
+    max-width: 1140px;
+    padding: 0 60px;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-height: 120px;
-  max-width: 80%;
   margin: 0 10%;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 .custom-logo-link {
@@ -377,17 +381,17 @@ main,
   display: none;
 }
 
-// .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
-//   @media only screen and (max-width: $media-lg) {
-//     position: fixed;
-//   }
-// }
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+  @media only screen and (max-width: $media-lg) {
+    position: fixed;
+  }
+}
 
-// .main-navigation .main-menu .menu-item-has-children>.sub-menu {
-//   @media only screen and (min-width: $media-lg) {
-//     text-align: left;
-//   }
-// }
+.main-navigation .main-menu .menu-item-has-children>.sub-menu {
+  @media only screen and (min-width: 1140px) {
+    text-align: left;
+  }
+}
 /*------------------------------End of Header -------------------------------------------------------------------*/
 
 .full-video {

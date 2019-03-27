@@ -6482,6 +6482,14 @@ main,
   fill: #1e6497 !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    background: white;
+    border-radius: 5%;
+    padding: 0 10px;
+  }
+}
+
 .header_primary-theme .sub-menu li {
   background: none !important;
 }
@@ -6514,13 +6522,6 @@ main,
 
 .main-navigation .sub-menu li:nth-of-type(2) {
   background: none !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-navigation .sub-menu li {
-    background: rgba(0, 0, 0, 0.4);
-    margin-top: -2px;
-  }
 }
 
 .main-navigation .sub-menu li a {
@@ -6575,6 +6576,22 @@ main,
     margin-right: 10px !important;
     position: relative;
   }
+}
+
+.main-menu-more-toggle {
+  position: relative;
+}
+
+.main-menu-more-toggle::before {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
+  background-size: cover !important;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 .social {
@@ -6653,14 +6670,20 @@ main,
   align-items: center;
   width: 100%;
   max-height: 120px;
-  max-width: 80%;
   margin: 0 10%;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-position {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .header-position {
+    max-width: 1140px;
+    padding: 0 60px;
   }
 }
 
@@ -6719,6 +6742,18 @@ main,
 .site-branding .site-title,
 .site-branding .site-description {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: right;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7270,6 +7305,14 @@ main,
   fill: #1e6497 !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    background: white;
+    border-radius: 5%;
+    padding: 0 10px;
+  }
+}
+
 .header_primary-theme .sub-menu li {
   background: none !important;
 }
@@ -7302,13 +7345,6 @@ main,
 
 .main-navigation .sub-menu li:nth-of-type(2) {
   background: none !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-navigation .sub-menu li {
-    background: rgba(0, 0, 0, 0.4);
-    margin-top: -2px;
-  }
 }
 
 .main-navigation .sub-menu li a {
@@ -7363,6 +7399,22 @@ main,
     margin-right: 10px !important;
     position: relative;
   }
+}
+
+.main-menu-more-toggle {
+  position: relative;
+}
+
+.main-menu-more-toggle::before {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
+  background-size: cover !important;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 .social {
@@ -7441,14 +7493,20 @@ main,
   align-items: center;
   width: 100%;
   max-height: 120px;
-  max-width: 80%;
   margin: 0 10%;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-position {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .header-position {
+    max-width: 1140px;
+    padding: 0 60px;
   }
 }
 
@@ -7507,6 +7565,18 @@ main,
 .site-branding .site-title,
 .site-branding .site-description {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: right;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/

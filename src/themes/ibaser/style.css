@@ -6494,6 +6494,14 @@ main,
   fill: #1e6497 !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    background: white;
+    border-radius: 5%;
+    padding: 0 10px;
+  }
+}
+
 .header_primary-theme .sub-menu li {
   background: none !important;
 }
@@ -6528,7 +6536,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -6681,14 +6689,20 @@ main,
   align-items: center;
   width: 100%;
   max-height: 120px;
-  max-width: 80%;
   margin: 0 10%;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-position {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .header-position {
+    max-width: 1140px;
+    padding: 0 60px;
   }
 }
 
@@ -6747,6 +6761,18 @@ main,
 .site-branding .site-title,
 .site-branding .site-description {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: left;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7298,6 +7324,14 @@ main,
   fill: #1e6497 !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .header_primary-theme .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    background: white;
+    border-radius: 5%;
+    padding: 0 10px;
+  }
+}
+
 .header_primary-theme .sub-menu li {
   background: none !important;
 }
@@ -7332,7 +7366,7 @@ main,
   background: none !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
@@ -7485,14 +7519,20 @@ main,
   align-items: center;
   width: 100%;
   max-height: 120px;
-  max-width: 80%;
   margin: 0 10%;
-  padding: 0 60px;
+  padding: 0 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-position {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .header-position {
+    max-width: 1140px;
+    padding: 0 60px;
   }
 }
 
@@ -7551,6 +7591,18 @@ main,
 .site-branding .site-title,
 .site-branding .site-description {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
+    text-align: left;
+  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
