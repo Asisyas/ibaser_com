@@ -6524,6 +6524,13 @@ main,
   background: none !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .main-navigation .sub-menu li {
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: -2px;
+  }
+}
+
 .main-navigation .sub-menu li a {
   color: #bfbfbf;
 }
@@ -7006,18 +7013,6 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a,
-.uagb-cta__link-content-inner span {
-  position: relative;
-  padding: 0 !important;
-  color: #1e6497 !important;
-}
-
-.btn a:hover,
-.uagb-cta__link-content-inner span:hover {
-  background: none !important;
-}
-
 .points {
   margin: 30px auto !important;
   max-width: 100% !important;
@@ -7122,23 +7117,6 @@ h2:before {
   color: #1e6497;
 }
 
-.entry .entry-content .wp-block-button .wp-block-button__link {
-  border: none;
-}
-
-.entry .entry-content .wp-block-button .wp-block-button__link:hover {
-  color: #f3a834;
-}
-
-.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
-  border: solid 1px #1e6497;
-}
-
-.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
-  border: solid 1px #f3a834;
-  background: none !important;
-}
-
 .timer-title {
   color: white;
   max-width: 300px;
@@ -7176,6 +7154,29 @@ h2:before {
 
 .uagb-team__social-icon svg:hover {
   opacity: 1;
+}
+
+.two-column-full {
+  min-height: 100vh;
+}
+
+.advgb-testimonial-position {
+  text-transform: inherit;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.advgb-testimonial-name {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+  border-color: #fff;
+}
+
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: #fff;
 }
 
 html,
@@ -7347,6 +7348,13 @@ main,
   background: none !important;
 }
 
+@media only screen and (min-width: 1140px) {
+  .main-navigation .sub-menu li {
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: -2px;
+  }
+}
+
 .main-navigation .sub-menu li a {
   color: #bfbfbf;
 }
@@ -7829,18 +7837,6 @@ main,
   margin: calc(2 * 1rem) auto !important;
 }
 
-.btn a,
-.uagb-cta__link-content-inner span {
-  position: relative;
-  padding: 0 !important;
-  color: #1e6497 !important;
-}
-
-.btn a:hover,
-.uagb-cta__link-content-inner span:hover {
-  background: none !important;
-}
-
 .points {
   margin: 30px auto !important;
   max-width: 100% !important;
@@ -7945,23 +7941,6 @@ h2:before {
   color: #1e6497;
 }
 
-.entry .entry-content .wp-block-button .wp-block-button__link {
-  border: none;
-}
-
-.entry .entry-content .wp-block-button .wp-block-button__link:hover {
-  color: #f3a834;
-}
-
-.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
-  border: solid 1px #1e6497;
-}
-
-.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
-  border: solid 1px #f3a834;
-  background: none !important;
-}
-
 .timer-title {
   color: white;
   max-width: 300px;
@@ -7999,4 +7978,27 @@ h2:before {
 
 .uagb-team__social-icon svg:hover {
   opacity: 1;
+}
+
+.two-column-full {
+  min-height: 100vh;
+}
+
+.advgb-testimonial-position {
+  text-transform: inherit;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+.advgb-testimonial-name {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+  border-color: #fff;
+}
+
+.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: #fff;
 }
