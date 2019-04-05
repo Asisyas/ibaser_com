@@ -6793,6 +6793,11 @@ main,
   margin: 0;
 }
 
+.full-video .wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background) {
+  border-color: #f2a630 !important;
+  color: #fff !important;
+}
+
 .full-video__information-block {
   position: absolute;
   z-index: 5;
@@ -7157,7 +7162,7 @@ h2:before {
 }
 
 .two-column-full {
-  padding: 10% 0;
+  padding: 10% 0 !important;
   min-height: 100vh;
 }
 
@@ -7166,11 +7171,16 @@ h2:before {
 }
 
 .two-column-full .wp-block-button.is-style-outline .wp-block-button__link {
-  border-color: #fff !important;
+  border-color: #f3a834 !important;
   color: #000 !important;
 }
 
-.advgb-testimonial-position {
+.two-column-full .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  border-color: #f3a834 !important;
+  color: #f3a834 !important;
+}
+
+.advgb-testimonial p.advgb-testimonial-position {
   text-transform: inherit;
   font-style: italic;
   font-size: 0.7rem;
@@ -7627,6 +7637,11 @@ main,
   margin: 0;
 }
 
+.full-video .wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background) {
+  border-color: #f2a630 !important;
+  color: #fff !important;
+}
+
 .full-video__information-block {
   position: absolute;
   z-index: 5;
@@ -7991,7 +8006,7 @@ h2:before {
 }
 
 .two-column-full {
-  padding: 10% 0;
+  padding: 10% 0 !important;
   min-height: 100vh;
 }
 
@@ -8000,11 +8015,16 @@ h2:before {
 }
 
 .two-column-full .wp-block-button.is-style-outline .wp-block-button__link {
-  border-color: #fff !important;
+  border-color: #f3a834 !important;
   color: #000 !important;
 }
 
-.advgb-testimonial-position {
+.two-column-full .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  border-color: #f3a834 !important;
+  color: #f3a834 !important;
+}
+
+.advgb-testimonial p.advgb-testimonial-position {
   text-transform: inherit;
   font-style: italic;
   font-size: 0.7rem;
