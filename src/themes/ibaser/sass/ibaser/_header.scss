@@ -669,28 +669,28 @@ main,
   }
 }
 
-.btn a,
-.uagb-cta__link-content-inner span {
-  position: relative;
-  padding: 0 !important;
-  color: $secondary-color !important;
+// .btn a,
+// .uagb-cta__link-content-inner span {
+//   position: relative;
+//   padding: 0 !important;
+//   color: $secondary-color !important;
 
-  &:hover {
-    background: none !important;
+//   &:hover {
+//     background: none !important;
 
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   right: -20px;
-    //   top: 0;
-    //   background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
-    //   background-size: contain;
-    //   width: 15px;
-    //   height: 15px;
-    //   display: block;
-    // }
-  }
-}
+//     // &::after {
+//     //   content: "";
+//     //   position: absolute;
+//     //   right: -20px;
+//     //   top: 0;
+//     //   background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160116/right-arrow.png) no-repeat;
+//     //   background-size: contain;
+//     //   width: 15px;
+//     //   height: 15px;
+//     //   display: block;
+//     // }
+//   }
+// }
 
 .points {
   margin: 30px auto !important;
@@ -794,21 +794,21 @@ h2 {
   color: $secondary-color;
 }
 
-.entry .entry-content .wp-block-button .wp-block-button__link {
-  border: none;
-  &:hover {
-    color: $third-color;
-    // border-bottom: solid 1px $third-color;
-  }
-}
+// .entry .entry-content .wp-block-button .wp-block-button__link {
+//   border: none;
+//   &:hover {
+//     color: $third-color;
+//     // border-bottom: solid 1px $third-color;
+//   }
+// }
 
-.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
-  border: solid 1px $secondary-color;
-  &:hover {
-    border: solid 1px $third-color;
-    background: none !important;
-  }
-}
+// .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+//   border: solid 1px $secondary-color;
+//   &:hover {
+//     border: solid 1px $third-color;
+//     background: none !important;
+//   }
+// }
 
 .timer-title {
   @media only screen and (min-width: $media-lg) {
@@ -844,4 +844,37 @@ h2 {
   &:hover {
     opacity: 1;
   }
+}
+
+.two-column-full {
+  padding: 10% 0;
+  min-height: 100vh;
+
+  .wp-block-button.aligncenter {
+    margin-top: 20px;
+  }
+
+  .wp-block-button.is-style-outline .wp-block-button__link {
+    border-color: #fff !important;
+    color: #000 !important;
+  }
+}
+
+.advgb-testimonial p.advgb-testimonial-position {
+  text-transform: inherit;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
+ .advgb-testimonial-name {
+  padding: 0;
+  margin: 5px 0;
+}
+
+ .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link {
+  border-color: #fff;
+}
+
+ .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
+  color: #fff;
 }

@@ -7157,7 +7157,17 @@ h2:before {
 }
 
 .two-column-full {
+  padding: 10% 0;
   min-height: 100vh;
+}
+
+.two-column-full .wp-block-button.aligncenter {
+  margin-top: 20px;
+}
+
+.two-column-full .wp-block-button.is-style-outline .wp-block-button__link {
+  border-color: #fff !important;
+  color: #000 !important;
 }
 
 .advgb-testimonial-position {
@@ -7981,7 +7991,17 @@ h2:before {
 }
 
 .two-column-full {
+  padding: 10% 0;
   min-height: 100vh;
+}
+
+.two-column-full .wp-block-button.aligncenter {
+  margin-top: 20px;
+}
+
+.two-column-full .wp-block-button.is-style-outline .wp-block-button__link {
+  border-color: #fff !important;
+  color: #000 !important;
 }
 
 .advgb-testimonial-position {
