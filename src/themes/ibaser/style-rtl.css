@@ -6456,14 +6456,11 @@ main,
   background: none !important;
 }
 
-.main-navigation .sub-menu li {
-  text-align: right;
-}
-
 @media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
+    text-align: right;
   }
 }
 
@@ -7136,11 +7133,16 @@ h2:before {
 
 .news,
 .events {
-  margin: auto;
+  margin: auto !important;
 }
 
 .news .advgb-post-content,
 .events .advgb-post-content {
+  text-align: center;
+}
+
+.news .advgb-post-title,
+.events .advgb-post-title {
   text-align: center;
 }
 
@@ -7154,14 +7156,17 @@ h2:before {
   color: #f3a834;
 }
 
-.advgb-blocks-container h2,
-.advgb-blocks-container h3 {
+.title {
   display: inline-block;
   border-bottom: solid #f3a834 2px;
   position: relative;
   right: 50%;
   transform: translateX(50%);
   margin: 20px auto;
+}
+
+.advgb-post-readmore {
+  margin-top: 25px;
 }
 
 .advgb-post-readmore a {
@@ -7184,7 +7189,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto;
+  margin: auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -7193,11 +7198,11 @@ h2:before {
 }
 
 .fixed-background {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .advgb-images-slider-block {
-  margin: auto;
+  margin: auto !important;
 }
 
 html,
@@ -7369,14 +7374,11 @@ main,
   background: none !important;
 }
 
-.main-navigation .sub-menu li {
-  text-align: right;
-}
-
 @media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
+    text-align: right;
   }
 }
 
@@ -8049,11 +8051,16 @@ h2:before {
 
 .news,
 .events {
-  margin: auto;
+  margin: auto !important;
 }
 
 .news .advgb-post-content,
 .events .advgb-post-content {
+  text-align: center;
+}
+
+.news .advgb-post-title,
+.events .advgb-post-title {
   text-align: center;
 }
 
@@ -8067,14 +8074,17 @@ h2:before {
   color: #f3a834;
 }
 
-.advgb-blocks-container h2,
-.advgb-blocks-container h3 {
+.title {
   display: inline-block;
   border-bottom: solid #f3a834 2px;
   position: relative;
   right: 50%;
   transform: translateX(50%);
   margin: 20px auto;
+}
+
+.advgb-post-readmore {
+  margin-top: 25px;
 }
 
 .advgb-post-readmore a {
@@ -8097,7 +8107,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto;
+  margin: auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -8106,9 +8116,9 @@ h2:before {
 }
 
 .fixed-background {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .advgb-images-slider-block {
-  margin: auto;
+  margin: auto !important;
 }

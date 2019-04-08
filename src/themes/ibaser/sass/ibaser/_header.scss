@@ -168,10 +168,10 @@ main,
     }
 
     li {
-      text-align: left;
       @media only screen and (min-width: 1140px) {
         background: rgba(0, 0, 0, .4);
         margin-top: -2px;
+        text-align: left;
       }
 
       a {
@@ -891,27 +891,25 @@ h2 {
 
 .news,
 .events {
-  margin: auto;
+  margin: auto !important;
 
   .advgb-post-content {
     text-align: center;
   }
 
-  .advgb-post-title a {
-    text-decoration: none;
+  .advgb-post-title {
+    text-align: center;
+      a {
+      text-decoration: none;
 
-    &:hover {
-      color: $third-color;
+      &:hover {
+        color: $third-color;
+      }
     }
-  }
-
-  .advgb-post-date {
-
   }
 }
 
-.advgb-blocks-container h2,
-.advgb-blocks-container h3 {
+.title {
   display: inline-block;
   border-bottom: solid $third-color 2px;
   position: relative;
@@ -920,28 +918,32 @@ h2 {
   margin: 20px auto;
 }
 
-.advgb-post-readmore a {
-  border-radius: 5px;
-  border: solid #000 1px;
-  transition: background .15s ease-in-out;
-  font-size: .88889em;
-  line-height: 1.2;
-  box-sizing: border-box;
-  font-weight: 700;
-  text-decoration: none;
-  padding: .76rem 1rem;
+.advgb-post-readmore {
+  margin-top: 25px;
 
-  &:active,
-  &:hover {
-    transition: all .15s ease-in-out;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $third-color;
+  a {
+    border-radius: 5px;
+    border: solid #000 1px;
+    transition: background .15s ease-in-out;
+    font-size: .88889em;
+    line-height: 1.2;
+    box-sizing: border-box;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .76rem 1rem;
+
+    &:active,
+    &:hover {
+      transition: all .15s ease-in-out;
+      border-width: 2px;
+      border-style: solid;
+      border-color: $third-color;
+    }
   }
 }
 
 .counter {
-  margin: auto;
+  margin: auto !important;
 
   .advgb-count-up-header {
     text-transform: uppercase;
@@ -950,9 +952,9 @@ h2 {
 }
 
 .fixed-background {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .advgb-images-slider-block {
-  margin: auto;
+  margin: auto !important;
 }

@@ -3010,6 +3010,17 @@ body.page .main-navigation {
   /* Nested sub-menu dashes */
 }
 
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
+  display: block;
+  left: 0;
+  margin-top: 0;
+  opacity: 1;
+  width: auto;
+  min-width: 100%;
+  /* Non-mobile position */
+  /* Nested sub-menu dashes */
+}
+
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   left: 0;
@@ -3022,6 +3033,21 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    height: auto;
+    min-width: -moz-max-content;
+    min-width: -webkit-max-content;
+    min-width: max-content;
+    transform: none;
+  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
     display: block;
     margin-top: 0;
@@ -3105,6 +3131,13 @@ body.page .main-navigation {
   position: absolute;
 }
 
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
+  left: 0;
+  width: 100%;
+  display: table;
+  position: absolute;
+}
+
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   left: 0;
   width: 100%;
@@ -3131,12 +3164,22 @@ body.page .main-navigation {
     display: block;
     width: max-content;
   }
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
+    right: 0;
+    left: auto;
+    display: block;
+    width: max-content;
+  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     right: 0;
     left: auto;
     display: block;
     width: max-content;
   }
+}
+
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
+  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
@@ -3185,6 +3228,16 @@ body.page .main-navigation {
   /* Non-mobile position */
 }
 
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
+  display: block;
+  margin-top: inherit;
+  position: relative;
+  width: 100%;
+  left: 0;
+  opacity: 1;
+  /* Non-mobile position */
+}
+
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
@@ -3196,6 +3249,10 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
+  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
+    float: none;
+    max-width: 100%;
+  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
@@ -3226,8 +3283,19 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
+  counter-reset: submenu;
+}
+
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
+}
+
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
+  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-weight: normal;
+  content: "– " counters(submenu, "– ", none);
+  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
@@ -6672,14 +6740,11 @@ main,
   background: none !important;
 }
 
-.main-navigation .sub-menu li {
-  text-align: left;
-}
-
 @media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
+    text-align: left;
   }
 }
 
@@ -7352,11 +7417,16 @@ h2:before {
 
 .news,
 .events {
-  margin: auto;
+  margin: auto !important;
 }
 
 .news .advgb-post-content,
 .events .advgb-post-content {
+  text-align: center;
+}
+
+.news .advgb-post-title,
+.events .advgb-post-title {
   text-align: center;
 }
 
@@ -7370,14 +7440,17 @@ h2:before {
   color: #f3a834;
 }
 
-.advgb-blocks-container h2,
-.advgb-blocks-container h3 {
+.title {
   display: inline-block;
   border-bottom: solid #f3a834 2px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin: 20px auto;
+}
+
+.advgb-post-readmore {
+  margin-top: 25px;
 }
 
 .advgb-post-readmore a {
@@ -7400,7 +7473,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto;
+  margin: auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -7409,11 +7482,11 @@ h2:before {
 }
 
 .fixed-background {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .advgb-images-slider-block {
-  margin: auto;
+  margin: auto !important;
 }
 
 html,
@@ -7585,14 +7658,11 @@ main,
   background: none !important;
 }
 
-.main-navigation .sub-menu li {
-  text-align: left;
-}
-
 @media only screen and (min-width: 1140px) {
   .main-navigation .sub-menu li {
     background: rgba(0, 0, 0, 0.4);
     margin-top: -2px;
+    text-align: left;
   }
 }
 
@@ -8265,11 +8335,16 @@ h2:before {
 
 .news,
 .events {
-  margin: auto;
+  margin: auto !important;
 }
 
 .news .advgb-post-content,
 .events .advgb-post-content {
+  text-align: center;
+}
+
+.news .advgb-post-title,
+.events .advgb-post-title {
   text-align: center;
 }
 
@@ -8283,14 +8358,17 @@ h2:before {
   color: #f3a834;
 }
 
-.advgb-blocks-container h2,
-.advgb-blocks-container h3 {
+.title {
   display: inline-block;
   border-bottom: solid #f3a834 2px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin: 20px auto;
+}
+
+.advgb-post-readmore {
+  margin-top: 25px;
 }
 
 .advgb-post-readmore a {
@@ -8313,7 +8391,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto;
+  margin: auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -8322,9 +8400,9 @@ h2:before {
 }
 
 .fixed-background {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .advgb-images-slider-block {
-  margin: auto;
+  margin: auto !important;
 }
