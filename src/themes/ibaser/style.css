@@ -2999,28 +2999,6 @@ body.page .main-navigation {
   /* Nested sub-menu dashes */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  left: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  left: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   left: 0;
@@ -3033,36 +3011,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
     display: block;
     margin-top: 0;
@@ -3124,20 +3072,6 @@ body.page .main-navigation {
   position: absolute;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  left: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  left: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   left: 0;
   width: 100%;
@@ -3158,32 +3092,12 @@ body.page .main-navigation {
     display: block;
     width: max-content;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
-    display: block;
-    width: max-content;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     right: 0;
     left: auto;
     display: block;
     width: max-content;
   }
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
@@ -3218,26 +3132,6 @@ body.page .main-navigation {
   /* Non-mobile position */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  left: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  left: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
@@ -3249,14 +3143,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
@@ -3279,30 +3165,8 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
@@ -7473,7 +7337,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto !important;
+  margin: 40px auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -7481,12 +7345,36 @@ h2:before {
   font-weight: 100;
 }
 
+.counter .advgb-counter-number {
+  border-bottom: solid 3px #f3a834;
+}
+
 .fixed-background {
   margin: 0 !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .fixed-background {
+    min-height: 350px !important;
+  }
+}
+
 .advgb-images-slider-block {
   margin: auto !important;
+}
+
+.mentor-description {
+  margin: 0 !important;
+  border-top: solid #1e6497 2px;
+  border-bottom: solid #1e6497 2px;
+}
+
+.mentor-video figure {
+  margin: 0 !important;
+}
+
+.main-slider {
+  margin-top: 30px !important;
 }
 
 html,
@@ -8391,7 +8279,7 @@ h2:before {
 }
 
 .counter {
-  margin: auto !important;
+  margin: 40px auto !important;
 }
 
 .counter .advgb-count-up-header {
@@ -8399,10 +8287,34 @@ h2:before {
   font-weight: 100;
 }
 
+.counter .advgb-counter-number {
+  border-bottom: solid 3px #f3a834;
+}
+
 .fixed-background {
   margin: 0 !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .fixed-background {
+    min-height: 350px !important;
+  }
+}
+
 .advgb-images-slider-block {
   margin: auto !important;
+}
+
+.mentor-description {
+  margin: 0 !important;
+  border-top: solid #1e6497 2px;
+  border-bottom: solid #1e6497 2px;
+}
+
+.mentor-video figure {
+  margin: 0 !important;
+}
+
+.main-slider {
+  margin-top: 30px !important;
 }

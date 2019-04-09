@@ -755,7 +755,7 @@ main,
 
 h1,
 h2 {
-  color: #1e6497;
+  color: $secondary-color;
   &:before {
     display: none !important;
   }
@@ -943,18 +943,41 @@ h2 {
 }
 
 .counter {
-  margin: auto !important;
+  margin: 40px auto !important;
 
   .advgb-count-up-header {
     text-transform: uppercase;
     font-weight: 100;
   }
+
+  .advgb-counter-number {
+    border-bottom: solid 3px $third-color;
+  }
 }
 
 .fixed-background {
+  @media only screen and (min-width: $media-lg) {
+    min-height: 350px !important;
+  }
   margin: 0 !important;
 }
 
 .advgb-images-slider-block {
   margin: auto !important;
+}
+
+.mentor-description {
+  margin: 0 !important;
+  border-top: solid $secondary-color 2px;
+  border-bottom: solid $secondary-color 2px;
+}
+
+.mentor-video {
+  figure {
+    margin: 0 !important;
+  }
+}
+
+.main-slider {
+  margin-top: 30px !important;
 }
