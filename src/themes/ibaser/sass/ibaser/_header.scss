@@ -864,7 +864,7 @@ h2 {
     color: #000 !important;
 
     &:hover {
-      color: $third-color !important;
+      border-color: $third-color !important;
     }
   }
 }
@@ -949,7 +949,7 @@ h2 {
 }
 
 .counter {
-  margin: 15px 0 30px auto !important;
+  margin: 15px auto !important;
 
   .advgb-count-up-header {
     text-transform: uppercase;
