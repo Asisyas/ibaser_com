@@ -382,7 +382,7 @@ main,
   display: none;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
+.main-navigation .main-menu .menu-item-has-children > .sub-menu.hidden-links {
   @media only screen and (max-width: $media-lg) {
     position: fixed;
   }
