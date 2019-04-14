@@ -123,7 +123,7 @@ main,
       }
     }
 
-    .main-navigation .main-menu .menu-item-has-children>.sub-menu {
+    .main-navigation .main-menu .menu-item-has-children>.sub-menu:not(.expanded-true) {
       @media only screen and (min-width: $media-lg) {
         background: rgb(255, 255, 255);
         border-radius: 5%;
