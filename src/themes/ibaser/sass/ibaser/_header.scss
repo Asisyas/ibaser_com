@@ -48,14 +48,14 @@ a {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
-main,
-.main {
-  display: block;
-}
+// main,
+// .main {
+//   display: block;
+// }
 
-.entry-header {
-  display: none;
-}
+// .entry-header {
+//   display: none;
+// }
 
 /*--------------- Header --------------------------*/
 // .header {
@@ -313,74 +313,74 @@ main,
 //   background: transparent;
 // }
 
-.header-position {
-  @media only screen and (min-width: $media-lg) {
-    flex-direction: row;
-  }
-  @media only screen and (min-width: 1140px) {
-    max-width: 1140px;
-    padding: 0 60px;
-  }
+// .header-position {
+//   @media only screen and (min-width: $media-lg) {
+//     flex-direction: row;
+//   }
+//   @media only screen and (min-width: 1140px) {
+//     max-width: 1140px;
+//     padding: 0 60px;
+//   }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-height: 120px;
-  margin: 0 10%;
-  padding: 0 40px;
-}
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   max-height: 120px;
+//   margin: 0 10%;
+//   padding: 0 40px;
+// }
 
-.custom-logo-link {
-  img {
-    display: none;
-  }
-}
+// .custom-logo-link {
+//   img {
+//     display: none;
+//   }
+// }
 
-.logotype {
-  @media only screen and (min-width: $media-lg) {
-    position: inherit;
-    top: inherit;
-    left: inherit;
-  }
-  display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: auto;
-  min-height: 60px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
+// .logotype {
+//   @media only screen and (min-width: $media-lg) {
+//     position: inherit;
+//     top: inherit;
+//     left: inherit;
+//   }
+//   display: block;
+//   background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
+//   background-size: contain;
+//   width: 200px;
+//   height: auto;
+//   min-height: 60px;
+//   position: absolute;
+//   top: 20px;
+//   left: 20px;
+// }
 
-.site-logo {
-  display: none;
-}
+// .site-logo {
+//   display: none;
+// }
 
-.site-branding-container {
-  @media only screen and (min-width: $media-lg) {
-    width: 80%;
-    position: inherit;
-    right: inherit;
-  }
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+// .site-branding-container {
+//   @media only screen and (min-width: $media-lg) {
+//     width: 80%;
+//     position: inherit;
+//     right: inherit;
+//   }
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+// }
 
-.site-branding {
-  @media only screen and (min-width: $media-lg) {
-    text-align: center;
-  }
-  margin: 0 auto !important;
-}
+// .site-branding {
+//   @media only screen and (min-width: $media-lg) {
+//     text-align: center;
+//   }
+//   margin: 0 auto !important;
+// }
 
-.site-branding .site-title,
-.site-branding .site-description {
-  display: none;
-}
+// .site-branding .site-title,
+// .site-branding .site-description {
+//   display: none;
+// }
 
 // .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links {
 //   @media only screen and (max-width: $media-lg) {
@@ -388,11 +388,11 @@ main,
 //   }
 // }
 
-.main-navigation .main-menu .menu-item-has-children>.sub-menu {
-  @media only screen and (min-width: 768px) {
-    text-align: left;
-  }
-}
+// .main-navigation .main-menu .menu-item-has-children>.sub-menu {
+//   @media only screen and (min-width: 768px) {
+//     text-align: left;
+//   }
+// }
 /*------------------------------End of Header -------------------------------------------------------------------*/
 
 .full-video {

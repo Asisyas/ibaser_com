@@ -6397,32 +6397,7 @@ a {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
-main,
-.main {
-  display: block;
-}
-
-.entry-header {
-  display: none;
-}
-
 /*--------------- Header --------------------------*/
-.main-menu-more-toggle {
-  position: relative;
-}
-
-.main-menu-more-toggle::before {
-  content: "";
-  position: absolute;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
-  background-size: cover !important;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  display: block;
-}
-
 .social {
   display: flex;
   justify-content: space-between;
@@ -6484,93 +6459,6 @@ main,
 .social .vk::after {
   background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/19185638/vk.png) no-repeat;
   background-size: cover !important;
-}
-
-.header-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-height: 120px;
-  margin: 0 10%;
-  padding: 0 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .header-position {
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-  .header-position {
-    max-width: 1140px;
-    padding: 0 60px;
-  }
-}
-
-.custom-logo-link img {
-  display: none;
-}
-
-.logotype {
-  display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: auto;
-  min-height: 60px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .logotype {
-    position: inherit;
-    top: inherit;
-    right: inherit;
-  }
-}
-
-.site-logo {
-  display: none;
-}
-
-.site-branding-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-branding-container {
-    width: 80%;
-    position: inherit;
-    left: inherit;
-  }
-}
-
-.site-branding {
-  margin: 0 auto !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-branding {
-    text-align: center;
-  }
-}
-
-.site-branding .site-title,
-.site-branding .site-description {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
-    text-align: right;
-  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
@@ -7141,32 +7029,7 @@ a {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
-main,
-.main {
-  display: block;
-}
-
-.entry-header {
-  display: none;
-}
-
 /*--------------- Header --------------------------*/
-.main-menu-more-toggle {
-  position: relative;
-}
-
-.main-menu-more-toggle::before {
-  content: "";
-  position: absolute;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
-  background-size: cover !important;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  display: block;
-}
-
 .social {
   display: flex;
   justify-content: space-between;
@@ -7228,93 +7091,6 @@ main,
 .social .vk::after {
   background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/19185638/vk.png) no-repeat;
   background-size: cover !important;
-}
-
-.header-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-height: 120px;
-  margin: 0 10%;
-  padding: 0 40px;
-}
-
-@media only screen and (min-width: 768px) {
-  .header-position {
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 1140px) {
-  .header-position {
-    max-width: 1140px;
-    padding: 0 60px;
-  }
-}
-
-.custom-logo-link img {
-  display: none;
-}
-
-.logotype {
-  display: block;
-  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/20220728/mountain-v4-light.png) no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: auto;
-  min-height: 60px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .logotype {
-    position: inherit;
-    top: inherit;
-    right: inherit;
-  }
-}
-
-.site-logo {
-  display: none;
-}
-
-.site-branding-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-branding-container {
-    width: 80%;
-    position: inherit;
-    left: inherit;
-  }
-}
-
-.site-branding {
-  margin: 0 auto !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-branding {
-    text-align: center;
-  }
-}
-
-.site-branding .site-title,
-.site-branding .site-description {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children > .sub-menu {
-    text-align: right;
-  }
 }
 
 /*------------------------------End of Header -------------------------------------------------------------------*/
