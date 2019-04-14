@@ -554,14 +554,14 @@ body .wp-block[data-align="full"] {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 300px) {
   body .wp-block[data-align="full"] {
     width: calc( 100% + 90px);
     max-width: calc( 100% + 90px);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   body .editor-writing-flow {
     max-width: 80%;
     margin: 0 10%;
@@ -592,7 +592,7 @@ body .wp-block[data-align="full"] {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block {
     width: calc(8 * (100vw / 12));
   }
@@ -643,7 +643,7 @@ h1:before {
   width: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   h1 {
     font-size: 2.8125em;
   }
@@ -662,7 +662,7 @@ h2:before {
   width: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   h2 {
     font-size: 2.25em;
   }
@@ -831,7 +831,7 @@ figcaption,
   font-weight: bolder;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block-cover h2,
   .wp-block-cover .wp-block-cover-text {
     margin-left: auto;
@@ -840,7 +840,7 @@ figcaption,
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block-cover {
     padding-left: 10%;
     padding-right: 10%;
@@ -869,14 +869,14 @@ figcaption,
   padding-right: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block[data-type="core/cover"][data-align="left"] .wp-block-cover,
   .wp-block[data-type="core/cover"][data-align="right"] .wp-block-cover {
     padding: calc(2.75 * 1rem) calc(2.75 * 1rem) calc(3.125 * 1rem);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block[data-type="core/cover"][data-align="wide"] h2,
   .wp-block[data-type="core/cover"][data-align="wide"] .wp-block-cover-text,
   .wp-block[data-type="core/cover"][data-align="full"] h2,
@@ -894,7 +894,7 @@ figcaption,
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block[data-type="core/cover"][data-align="full"] .wp-block-cover {
     padding-left: calc(10% + 64px);
     padding-right: calc(10% + 64px);
@@ -998,7 +998,7 @@ figcaption,
   color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block-pullquote.is-style-solid-color blockquote {
     max-width: 80%;
   }
@@ -1024,7 +1024,7 @@ figcaption,
   margin-top: 0.5em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block[data-type="core/pullquote"] blockquote > .block-library-pullquote__content .editor-rich-text__tinymce[data-is-empty="true"]::before,
   .wp-block[data-type="core/pullquote"] blockquote > .editor-rich-text p,
   .wp-block[data-type="core/pullquote"] p,
@@ -1080,7 +1080,7 @@ figcaption,
   text-align: left;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .wp-block[data-type="core/pullquote"][data-align="full"] .wp-block-pullquote blockquote {
     max-width: calc(80% - 128px);
   }
