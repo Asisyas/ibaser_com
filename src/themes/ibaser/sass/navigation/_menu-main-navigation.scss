@@ -79,9 +79,9 @@
 				display: inline-block;
 				position: inherit;
 
-				@include media(tablet) {
+				// @include media(tablet) {
 					position: relative;
-				}
+				// }
 
 				> a {
 					margin-right: #{0.125 * $size__spacing-unit};
@@ -150,12 +150,12 @@
 		left: -9999px;
 		z-index: 99999;
 
-		@include media(tablet) {
+		// @include media(tablet) {
 			width: auto;
 			min-width: -moz-max-content;
 			min-width: -webkit-max-content;
 			min-width: max-content;
-		}
+		// }
 
 		> li {
 
@@ -185,7 +185,7 @@
 					margin-right: 0;
 				}
 
-				@include media(tablet) {
+				// @include media(tablet) {
 
 					.menu-item-has-children > a {
 
@@ -193,7 +193,7 @@
 							content: "\203a";
 						}
 					}
-				}
+				// }
 			}
 
 			> a,
@@ -259,7 +259,7 @@
 
 
 		/* Non-mobile position */
-		@include media(tablet) {
+		// @include media(tablet) {
 			display: block;
 			margin-top: 0;
 			opacity: 1;
@@ -273,7 +273,7 @@
 			min-width: -webkit-max-content;
 			min-width: max-content;
 			transform: none;
-		}
+		// }
 
 		&.hidden-links {
 			left: 0;
@@ -281,12 +281,12 @@
 			display: table;
 			position: absolute;
 
-			@include media(tablet) {
+			// @include media(tablet) {
 				right: 0;
 				left: auto;
 				display: block;
 				width: max-content;
-			}
+			// }
 		}
 
 		.submenu-expand {
@@ -302,10 +302,10 @@
 			opacity: 1;
 
 			/* Non-mobile position */
-			@include media(tablet) {
+			// @include media(tablet) {
 				float: none;
 				max-width: 100%;
-			}
+			// }
 		}
 
 		/* Nested sub-menu dashes */
@@ -334,7 +334,7 @@
 
 
 		/* Non-mobile position */
-		@include media(tablet) {
+		// @include media(tablet) {
 			display: block;
 			float: none;
 			margin-top: 0;
@@ -349,7 +349,7 @@
 			min-width: -webkit-max-content;
 			min-width: max-content;
 			transform: none;
-		}
+		// }
 
 		&.hidden-links {
 			left: 0;
@@ -357,12 +357,12 @@
 			display: table;
 			position: absolute;
 
-			@include media(tablet) {
+			// @include media(tablet) {
 				right: 0;
 				left: auto;
 				display: table;
 				width: max-content;
-			}
+			// }
 		}
 
 		.submenu-expand {
@@ -378,10 +378,10 @@
 			opacity: 1;
 
 			/* Non-mobile position */
-			@include media(tablet) {
+			// @include media(tablet) {
 				float: none;
 				max-width: 100%;
-			}
+			// }
 		}
 
 		/* Nested sub-menu dashes */
