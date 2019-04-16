@@ -26,13 +26,13 @@
 		<header id="masthead" class="header <?php if(!is_front_page()): ?> header_primary-theme <?php endif; ?><?php echo 1 === 2 && is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
 
 			<div class="header-position">
-				<a class="logotype" href="/" title="Логотип iBaser"></a>
+				<!-- <a class="logotype" href="/" title="Логотип iBaser"></a> -->
 
 				<div class="site-branding-container">
 					<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
 				</div><!-- .layout-wrap -->
 				
-				<div class="header__contacts">
+<!-- 				<div class="header__contacts">
 					<ul class="social">
 						<li class="social__link--block">
 							<a class="instagram social__link is-active-opacity--block" href="https://www.instagram.com" alt="instagram ссылка" target="_blank"></a>
@@ -58,7 +58,7 @@
 							<a href="tel:+37529-846-77-34">+375(29) 846 77 34</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 
 			<?php if ( 1 === 2 && is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>

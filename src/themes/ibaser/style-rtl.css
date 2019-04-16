@@ -6397,7 +6397,179 @@ a {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
+main,
+.main {
+  display: block;
+}
+
+.entry-header {
+  display: none;
+}
+
 /*--------------- Header --------------------------*/
+.header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  min-height: 110px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.header_primary-theme {
+  position: inherit;
+  background: none;
+  border-bottom: solid 2px #1e6497;
+}
+
+.header_primary-theme a,
+.header_primary-theme .main-menu > li > a {
+  color: #928d8d !important;
+}
+
+.header_primary-theme a:hover,
+.header_primary-theme .main-menu > li > a:hover {
+  color: #2d303a !important;
+}
+
+.header_primary-theme a:hover .main-menu .submenu-expand svg,
+.header_primary-theme .main-menu > li > a:hover .main-menu .submenu-expand svg {
+  fill: #2d303a !important;
+}
+
+.header_primary-theme .main-menu .menu-item-has-children > .sub-menu:not(.expanded-true) {
+  background: transparent;
+  border-radius: 5%;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header_primary-theme .main-menu .menu-item-has-children > .sub-menu:not(.expanded-true) {
+    background: white;
+  }
+}
+
+.header_primary-theme .sub-menu li {
+  background: none !important;
+}
+
+.main-menu > li > a {
+  color: #bfbfbf !important;
+}
+
+.main-menu > li > a:hover {
+  color: #fff !important;
+}
+
+.main-menu > li > a:hover .submenu-expand svg {
+  fill: #fff !important;
+}
+
+.main-menu .submenu-expand svg {
+  fill: #bfbfbf !important;
+}
+
+.main-navigation {
+  text-align: center;
+  /*to do*/
+  line-height: 80px;
+  /*to do*/
+}
+
+@media only screen and (min-width: 768px) {
+  .main-navigation .sub-menu {
+    background-color: transparent;
+  }
+}
+
+.main-navigation .sub-menu li:nth-of-type(2) {
+  background: none !important;
+}
+
+.main-navigation .sub-menu li a {
+  color: #bfbfbf;
+}
+
+.main-navigation .sub-menu li a:hover {
+  color: #fff;
+}
+
+.main-navigation .sub-menu.expanded-true {
+  background-color: #2d303a;
+}
+
+.main-navigation .sub-menu.expanded-true li a {
+  color: #fff !important;
+}
+
+.main-navigation .sub-menu.expanded-true svg {
+  fill: #fff !important;
+}
+
+.main-navigation .sub-menu.expanded-true > li > a {
+  padding: 10px 20px;
+}
+
+.main-navigation .main-menu > li.menu-item-has-children > a {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu > li > a:hover {
+    position: relative;
+    z-index: 5;
+    border-top: solid #f3a834 2px;
+    padding-top: 6px !important;
+  }
+}
+
+.submenu-expand.main-menu-more-toggle svg {
+  display: none;
+}
+
+.main-navigation .sub-menu {
+  background-color: transparent;
+}
+
+.main-navigation .sub-menu li a {
+  text-align: right;
+  padding: 15px 0 0;
+}
+
+.main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
+.main-navigation .sub-menu > li > .menu-item-link-return:hover,
+.main-navigation .sub-menu > li > .menu-item-link-return:focus {
+  background: transparent;
+}
+
+.main-menu-more-toggle {
+  position: relative;
+}
+
+.main-menu-more-toggle::before {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
+  background-size: cover !important;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.site-branding .site-title,
+.site-branding .site-description {
+  display: none;
+}
+
+/*------------------------------End of Header -------------------------------------------------------------------*/
+/*--------------------------------Social-------------------------------------------------------------------------*/
 .social {
   display: flex;
   justify-content: space-between;
@@ -6461,7 +6633,7 @@ a {
   background-size: cover !important;
 }
 
-/*------------------------------End of Header -------------------------------------------------------------------*/
+/*--------------------------------End of Social-------------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
   position: relative;
@@ -6634,6 +6806,31 @@ a {
   background-size: contain !important;
 }
 
+.site-info {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-info a {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-info a {
+    font-size: 12px;
+  }
+}
+
+.footer {
+  padding-bottom: 25px;
+}
+
 .footer-contacts {
   margin: auto;
 }
@@ -6660,31 +6857,6 @@ a {
 .footer-contacts li {
   padding: 10px 40px 10px 0;
   max-width: 240px;
-}
-
-.site-info {
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-info {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.site-info a {
-  font-size: 0.7rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-info a {
-    font-size: 12px;
-  }
-}
-
-.footer {
-  padding-bottom: 25px;
 }
 
 .footer-navigation--block {
@@ -7029,7 +7201,179 @@ a {
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 }
 
+main,
+.main {
+  display: block;
+}
+
+.entry-header {
+  display: none;
+}
+
 /*--------------- Header --------------------------*/
+.header {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  min-height: 110px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.header_primary-theme {
+  position: inherit;
+  background: none;
+  border-bottom: solid 2px #1e6497;
+}
+
+.header_primary-theme a,
+.header_primary-theme .main-menu > li > a {
+  color: #928d8d !important;
+}
+
+.header_primary-theme a:hover,
+.header_primary-theme .main-menu > li > a:hover {
+  color: #2d303a !important;
+}
+
+.header_primary-theme a:hover .main-menu .submenu-expand svg,
+.header_primary-theme .main-menu > li > a:hover .main-menu .submenu-expand svg {
+  fill: #2d303a !important;
+}
+
+.header_primary-theme .main-menu .menu-item-has-children > .sub-menu:not(.expanded-true) {
+  background: transparent;
+  border-radius: 5%;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header_primary-theme .main-menu .menu-item-has-children > .sub-menu:not(.expanded-true) {
+    background: white;
+  }
+}
+
+.header_primary-theme .sub-menu li {
+  background: none !important;
+}
+
+.main-menu > li > a {
+  color: #bfbfbf !important;
+}
+
+.main-menu > li > a:hover {
+  color: #fff !important;
+}
+
+.main-menu > li > a:hover .submenu-expand svg {
+  fill: #fff !important;
+}
+
+.main-menu .submenu-expand svg {
+  fill: #bfbfbf !important;
+}
+
+.main-navigation {
+  text-align: center;
+  /*to do*/
+  line-height: 80px;
+  /*to do*/
+}
+
+@media only screen and (min-width: 768px) {
+  .main-navigation .sub-menu {
+    background-color: transparent;
+  }
+}
+
+.main-navigation .sub-menu li:nth-of-type(2) {
+  background: none !important;
+}
+
+.main-navigation .sub-menu li a {
+  color: #bfbfbf;
+}
+
+.main-navigation .sub-menu li a:hover {
+  color: #fff;
+}
+
+.main-navigation .sub-menu.expanded-true {
+  background-color: #2d303a;
+}
+
+.main-navigation .sub-menu.expanded-true li a {
+  color: #fff !important;
+}
+
+.main-navigation .sub-menu.expanded-true svg {
+  fill: #fff !important;
+}
+
+.main-navigation .sub-menu.expanded-true > li > a {
+  padding: 10px 20px;
+}
+
+.main-navigation .main-menu > li.menu-item-has-children > a {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-menu > li > a:hover {
+    position: relative;
+    z-index: 5;
+    border-top: solid #f3a834 2px;
+    padding-top: 6px !important;
+  }
+}
+
+.submenu-expand.main-menu-more-toggle svg {
+  display: none;
+}
+
+.main-navigation .sub-menu {
+  background-color: transparent;
+}
+
+.main-navigation .sub-menu li a {
+  text-align: right;
+  padding: 15px 0 0;
+}
+
+.main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
+.main-navigation .sub-menu > li > .menu-item-link-return:hover,
+.main-navigation .sub-menu > li > .menu-item-link-return:focus {
+  background: transparent;
+}
+
+.main-menu-more-toggle {
+  position: relative;
+}
+
+.main-menu-more-toggle::before {
+  content: "";
+  position: absolute;
+  background: url(https://storage.googleapis.com/ibaser-cloud/wp-content/uploads/2019/03/08160218/menu.png) no-repeat !important;
+  background-size: cover !important;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.site-branding .site-title,
+.site-branding .site-description {
+  display: none;
+}
+
+/*------------------------------End of Header -------------------------------------------------------------------*/
+/*--------------------------------Social-------------------------------------------------------------------------*/
 .social {
   display: flex;
   justify-content: space-between;
@@ -7093,7 +7437,7 @@ a {
   background-size: cover !important;
 }
 
-/*------------------------------End of Header -------------------------------------------------------------------*/
+/*--------------------------------End of Social-------------------------------------------------------------------------*/
 .full-video {
   margin-top: -70px !important;
   position: relative;
@@ -7266,6 +7610,31 @@ a {
   background-size: contain !important;
 }
 
+.site-info {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-info a {
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-info a {
+    font-size: 12px;
+  }
+}
+
+.footer {
+  padding-bottom: 25px;
+}
+
 .footer-contacts {
   margin: auto;
 }
@@ -7292,31 +7661,6 @@ a {
 .footer-contacts li {
   padding: 10px 40px 10px 0;
   max-width: 240px;
-}
-
-.site-info {
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-info {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.site-info a {
-  font-size: 0.7rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-info a {
-    font-size: 12px;
-  }
-}
-
-.footer {
-  padding-bottom: 25px;
 }
 
 .footer-navigation--block {
